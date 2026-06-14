@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "document": "qhkc_tools",
+  "source_url": "https://akshare.akfamily.xyz/_sources/data/qhkc/tools.md.txt",
+  "sha256": "48d6ca95bc3b2ab89c2d7409af404ee5862fad1ba364498b90dccbdc48536596",
+  "interfaces": [
+    {
+      "interface": "long_pool",
+      "section": [
+        "工具",
+        "龙虎牛熊多头合约池"
+      ],
+      "line": 7,
+      "description": "龙虎牛熊多头合约池接口"
+    },
+    {
+      "interface": "short_pool",
+      "section": [
+        "工具",
+        "龙虎牛熊空头合约池"
+      ],
+      "line": 78,
+      "description": "龙虎牛熊空头合约池"
+    }
+  ]
+}

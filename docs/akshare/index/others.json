@@ -1,0 +1,422 @@
+{
+  "schema_version": 1,
+  "document": "others",
+  "source_url": "https://akshare.akfamily.xyz/_sources/data/others/others.md.txt",
+  "sha256": "a083c20e38bbee68716767880ee61ea2cfeab8812ba7589810f71b955bab3084",
+  "interfaces": [
+    {
+      "interface": "car_market_total_cpca",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "汽车销量排行",
+        "乘联会-统计数据-总体市场"
+      ],
+      "line": 7,
+      "target_url": "http://data.cpcadata.com/TotalMarket",
+      "description": "乘联会-统计数据-总体市场",
+      "limit": "单次返回指定 symbol 和 indicator 的数据"
+    },
+    {
+      "interface": "car_market_man_rank_cpca",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "汽车销量排行",
+        "乘联会-统计数据-厂商排名"
+      ],
+      "line": 59,
+      "target_url": "http://data.cpcadata.com/ManRank",
+      "description": "乘联会-统计数据-厂商排名",
+      "limit": "单次返回指定 symbol 和 indicator 的数据"
+    },
+    {
+      "interface": "car_market_cate_cpca",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "汽车销量排行",
+        "乘联会-统计数据-车型大类"
+      ],
+      "line": 109,
+      "target_url": "http://data.cpcadata.com/CategoryMarket",
+      "description": "乘联会-统计数据-车型大类",
+      "limit": "单次返回指定 symbol 和 indicator 的数据"
+    },
+    {
+      "interface": "car_market_country_cpca",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "汽车销量排行",
+        "乘联会-统计数据-国别细分市场"
+      ],
+      "line": 161,
+      "target_url": "http://data.cpcadata.com/CountryMarket",
+      "description": "乘联会-统计数据-国别细分市场",
+      "limit": "单次返回指定 symbol 和 indicator 的数据"
+    },
+    {
+      "interface": "car_market_segment_cpca",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "汽车销量排行",
+        "乘联会-统计数据-级别细分市场"
+      ],
+      "line": 218,
+      "target_url": "http://data.cpcadata.com/SegmentMarket",
+      "description": "乘联会-统计数据-级别细分市场",
+      "limit": "单次返回指定 symbol 的数据"
+    },
+    {
+      "interface": "car_market_fuel_cpca",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "汽车销量排行",
+        "乘联会-统计数据-新能源细分市场"
+      ],
+      "line": 272,
+      "target_url": "http://data.cpcadata.com/FuelMarket",
+      "description": "乘联会-统计数据-车型大类",
+      "limit": "单次返回指定 symbol 的数据"
+    },
+    {
+      "interface": "car_sale_rank_gasgoo",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "汽车销量排行",
+        "盖世研究院"
+      ],
+      "line": 323,
+      "target_url": "https://i.gasgoo.com/data/ranking",
+      "description": "盖世汽车资讯的汽车销量排行榜数据",
+      "limit": "单次返回指定 symbol 和 date 的汽车销量排行榜数据"
+    },
+    {
+      "interface": "news_cctv",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "新闻联播文字稿"
+      ],
+      "line": 572,
+      "target_url": "https://tv.cctv.com/lm/xwlb",
+      "description": "新闻联播文字稿, 数据区间从 20160330-至今",
+      "limit": "单次返回指定日期新闻联播文字稿数据"
+    },
+    {
+      "interface": "sunrise_daily",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "日出和日落",
+        "日出和日落-天"
+      ],
+      "line": 626,
+      "target_url": "https://www.timeanddate.com/sun/china/",
+      "description": "中国各大城市-日出和日落时间, 数据区间从 19990101-至今, 推荐使用代理访问",
+      "limit": "单次返回指定日期和指定城市的数据"
+    },
+    {
+      "interface": "sunrise_monthly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "日出和日落",
+        "日出和日落-月"
+      ],
+      "line": 678,
+      "target_url": "https://www.timeanddate.com/sun/china/",
+      "description": "中国各大城市-日出和日落时间, 数据区间从 19990101-至今, 推荐使用代理访问",
+      "limit": "单次返回指定日期所在月份每天的数据, 如果是未来日期则为预测值"
+    },
+    {
+      "interface": "air_quality_hebei",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "空气质量-河北",
+        "近期空气质量"
+      ],
+      "line": 762,
+      "target_url": "http://218.11.10.130:8080/#/application/home",
+      "description": "河北省实时空气质量数据",
+      "limit": "单次返回所有城市数据"
+    },
+    {
+      "interface": "air_city_table",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "空气质量-全国",
+        "城市列表"
+      ],
+      "line": 835,
+      "target_url": "https://www.aqistudy.cn/",
+      "description": "所有能获取空气质量数据的城市表",
+      "limit": "单次返回所有可以获取的城市表数据"
+    },
+    {
+      "interface": "air_quality_hist",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "空气质量-全国",
+        "空气质量历史数据"
+      ],
+      "line": 889,
+      "target_url": "https://www.zq12369.com/",
+      "description": "指定城市和数据频率下并且在指定时间段内的空气质量数据",
+      "limit": "单次返回所有的数据, 在提取一小时频率数据时请注意时间跨度不宜过长, 提取日频率数据的早年数据请分段提取"
+    },
+    {
+      "interface": "air_quality_rank",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "空气质量-全国",
+        "空气质量排名"
+      ],
+      "line": 1035,
+      "target_url": "https://www.zq12369.com/environment.php",
+      "description": "获取指定 date 时间点上所有城市(168个)的空气质量数据",
+      "limit": "单次返回所有的数据"
+    },
+    {
+      "interface": "air_quality_watch_point",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "空气质量-全国",
+        "监测点空气质量"
+      ],
+      "line": 1164,
+      "target_url": "https://www.zq12369.com/environment.php",
+      "description": "获取每个城市的所有空气质量监测点的数据",
+      "limit": "单次返回指定城市指定日期区间的所有监测点的空气质量数据"
+    },
+    {
+      "interface": "fortune_rank",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "财富排行榜-中文"
+      ],
+      "line": 1221,
+      "target_url": "https://www.fortunechina.com/fortune500/node_65.htm",
+      "description": "指定年份财富世界 500 强公司排行榜",
+      "limit": "单次返回某一个年份的所有历史数据"
+    },
+    {
+      "interface": "forbes_rank",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "福布斯中国榜单"
+      ],
+      "line": 1270,
+      "target_url": "https://www.forbeschina.com/lists",
+      "description": "福布斯中国-榜单数据, 一共 87 个指标的数据可以获取",
+      "limit": "单次返回指定 symbol 的数据"
+    },
+    {
+      "interface": "xincaifu_rank",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "新财富富豪榜"
+      ],
+      "line": 1411,
+      "target_url": "http://www.xcf.cn/zhuanti/ztzz/hdzt1/500frb/index.html",
+      "description": "新财富 500 富豪榜, 从 2003 年至今",
+      "limit": "单次返回指定年份的富豪榜数据"
+    },
+    {
+      "interface": "hurun_rank",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "胡润排行榜"
+      ],
+      "line": 1467,
+      "target_url": "https://www.hurun.net/zh-CN/Rank/HsRankDetails?num=QWDD234E",
+      "description": "胡润百富榜单；富豪榜系列，创业系列，500强系列，特色系列",
+      "limit": "单次返回指定 indicator 和 year 的榜单数据"
+    },
+    {
+      "interface": "movie_boxoffice_realtime",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "电影票房",
+        "实时票房"
+      ],
+      "line": 1673,
+      "target_url": "https://ys.endata.cn/BoxOffice/Movie",
+      "description": "当前时刻的实时电影票房数据, 每 5 分钟更新一次数据, 实时票房包含今天未开映场次已售出的票房",
+      "limit": "当前时刻的实时票房数据"
+    },
+    {
+      "interface": "movie_boxoffice_daily",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "电影票房",
+        "单日票房"
+      ],
+      "line": 1726,
+      "target_url": "https://www.endata.com.cn/BoxOffice/BO/Day/index.html",
+      "description": "指定日期的电影票房数据, 每日 10:30, 12:30更新日票房，16:30 同时补充前 7 日票房",
+      "limit": "只能指定最近的日期"
+    },
+    {
+      "interface": "movie_boxoffice_weekly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "电影票房",
+        "单周票房"
+      ],
+      "line": 1781,
+      "target_url": "https://www.endata.com.cn/BoxOffice/BO/Week/oneWeek.html",
+      "description": "指定日期所在完整周的票房数据, 影片周票房数据初始更新周期为每周二，下周二补充数据",
+      "limit": "指定日期所在完整周的票房数据"
+    },
+    {
+      "interface": "movie_boxoffice_monthly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "电影票房",
+        "单月票房"
+      ],
+      "line": 1837,
+      "target_url": "https://www.endata.com.cn/BoxOffice/BO/Month/oneMonth.html",
+      "description": "获取指定日期所在月份的票房数据, 每月5号更新上月票房，并补充之前两个月票房",
+      "limit": "指定日期所在月份的票房数据, 只能获取最近月份的数据"
+    },
+    {
+      "interface": "movie_boxoffice_yearly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "电影票房",
+        "年度票房"
+      ],
+      "line": 1893,
+      "target_url": "https://www.endata.com.cn/BoxOffice/BO/Year/index.html",
+      "description": "指定日期所在年度的票房数据",
+      "limit": "指定日期所在年度的票房数据, 只能获取最近年度的数据"
+    },
+    {
+      "interface": "movie_boxoffice_yearly_first_week",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "电影票房",
+        "年度首周票房"
+      ],
+      "line": 1962,
+      "target_url": "https://www.endata.com.cn/BoxOffice/BO/Year/firstWeek.html",
+      "description": "指定日期所在年度的年度首周票房数据",
+      "limit": "指定日期所在年度的年度首周票房数据, 只能获取最近年度的数据"
+    },
+    {
+      "interface": "movie_boxoffice_cinema_daily",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "电影票房",
+        "影院票房-日票房排行"
+      ],
+      "line": 2015,
+      "target_url": "https://www.endata.com.cn/BoxOffice/BO/Cinema/day.html",
+      "description": "指定日期的每日各影院的票房数据",
+      "limit": "指定日期各影院的票房数据, 注意当前日期的数据需要第二日才可以获取"
+    },
+    {
+      "interface": "movie_boxoffice_cinema_weekly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "电影票房",
+        "影院票房-周票房排行"
+      ],
+      "line": 2070,
+      "target_url": "https://www.endata.com.cn/BoxOffice/BO/Cinema/week.html",
+      "description": "指定日期的完整周各影院的票房数据",
+      "limit": "指定日期的完整周各影院的票房数据, 注意当前日期的数据只能返回上周的数据"
+    },
+    {
+      "interface": "video_tv",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "视频播映",
+        "电视剧集"
+      ],
+      "line": 2127,
+      "target_url": "https://www.endata.com.cn/Video/index.html",
+      "description": "艺恩-视频放映-电视剧集",
+      "limit": "返回前一日的电视剧播映数据"
+    },
+    {
+      "interface": "video_variety_show",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "视频播映",
+        "综艺节目"
+      ],
+      "line": 2182,
+      "target_url": "https://www.endata.com.cn/Video/index.html",
+      "description": "艺恩-视频放映-综艺节目",
+      "limit": "返回前一日的综艺播映数据"
+    },
+    {
+      "interface": "business_value_artist",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "艺人",
+        "艺人商业价值"
+      ],
+      "line": 2239,
+      "target_url": "https://www.endata.com.cn/Marketing/Artist/business.html",
+      "description": "艺恩-艺人-艺人商业价值",
+      "limit": "返回当前的艺人商业价值数据"
+    },
+    {
+      "interface": "online_value_artist",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "艺人",
+        "艺人流量价值"
+      ],
+      "line": 2294,
+      "target_url": "https://www.endata.com.cn/Marketing/Artist/business.html",
+      "description": "艺恩-艺人-艺人流量价值",
+      "limit": "返回当前的艺人流量价值数据"
+    },
+    {
+      "interface": "stock_js_weibo_report",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "微博舆情报告"
+      ],
+      "line": 2349,
+      "target_url": "https://datacenter.jin10.com/market",
+      "description": "微博舆情报告中近期受关注的股票",
+      "limit": "单次返回指定时间内微博舆情报告中近期受关注的股票"
+    },
+    {
+      "interface": "index_bloomberg_billionaires",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "彭博亿万富豪指数",
+        "彭博实时亿万富豪指数"
+      ],
+      "line": 2450,
+      "target_url": "https://www.bloomberg.com/billionaires/",
+      "description": "彭博亿万富豪指数, 全球前 500 名; 该接口需要使用代理访问",
+      "limit": "单次返回所有数据彭博亿万富豪排名数据"
+    },
+    {
+      "interface": "index_bloomberg_billionaires_hist",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "彭博亿万富豪指数",
+        "历史彭博亿万富豪指数"
+      ],
+      "line": 2504,
+      "target_url": "https://stats.areppim.com/stats/links_billionairexlists.htm",
+      "description": "按照年份查询彭博亿万富豪指数; 该接口需要使用代理访问",
+      "limit": "单次返回当年所有数据彭博亿万富豪排名数据"
+    },
+    {
+      "interface": "game_hot_rank_taptap",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 另类数据",
+        "彭博亿万富豪指数",
+        "TapTap 游戏榜单"
+      ],
+      "line": 2559,
+      "target_url": "https://www.taptap.cn/top/played",
+      "description": "按照榜单类型查询 TapTap 平台游戏排行榜数据",
+      "limit": "单次返回指定榜单的全部游戏排名数据"
+    }
+  ]
+}

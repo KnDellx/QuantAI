@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "document": "event",
+  "source_url": "https://akshare.akfamily.xyz/_sources/data/event/event.md.txt",
+  "sha256": "c13ca275739b14c3a4d2db58b28faaf6e2e1bd35bb4019de6d54ad1f13ed677a",
+  "interfaces": [
+    {
+      "interface": "migration_area_baidu",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 迁徙数据",
+        "迁徙数据-百度",
+        "迁入与迁出地详情"
+      ],
+      "line": 7,
+      "target_url": "https://qianxi.baidu.com/?from=shoubai#city=0",
+      "description": "百度-百度地图慧眼-百度迁徙-迁入/迁出地数据接口",
+      "limit": "单次返回前 100 个城市的数据"
+    },
+    {
+      "interface": "migration_scale_baidu",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 迁徙数据",
+        "迁徙数据-百度",
+        "迁徙规模"
+      ],
+      "line": 60,
+      "target_url": "https://qianxi.baidu.com/?from=shoubai#city=0",
+      "description": "百度-百度地图慧眼-百度迁徙-迁徙规模",
+      "limit": "单次返回所有迁徙规模数据"
+    }
+  ]
+}

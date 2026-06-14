@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "document": "fx",
+  "source_url": "https://akshare.akfamily.xyz/_sources/data/fx/fx.md.txt",
+  "sha256": "e95e8120ee1ff34bb74b610c43269584e1e52f2f09997a5da2003765c478627d",
+  "interfaces": [
+    {
+      "interface": "forex_spot_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 外汇数据",
+        "实时行情数据"
+      ],
+      "line": 5,
+      "target_url": "https://quote.eastmoney.com/center/gridlist.html#forex_all",
+      "description": "东方财富网-行情中心-外汇市场-所有汇率-实时行情数据",
+      "limit": "单次返回所有实时行情数据"
+    },
+    {
+      "interface": "forex_hist_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 外汇数据",
+        "历史行情数据"
+      ],
+      "line": 63,
+      "target_url": "https://quote.eastmoney.com/cnyrate/EURCNYC.html",
+      "description": "东方财富网-行情中心-外汇市场-所有汇率-历史行情数据",
+      "limit": "单次返回指定 symbol 的历史行情数据"
+    },
+    {
+      "interface": "currency_boc_sina",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 外汇数据",
+        "人民币牌价数据"
+      ],
+      "line": 121,
+      "target_url": "https://biz.finance.sina.com.cn/forex/forex.php?startdate=2012-01-01&enddate=2021-06-14&money_code=EUR&type=0",
+      "description": "新浪财经-中行人民币牌价历史数据",
+      "limit": "单次返回指定日期的所有历史数据"
+    },
+    {
+      "interface": "currency_boc_safe",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 外汇数据",
+        "人民币汇率中间价"
+      ],
+      "line": 176,
+      "target_url": "https://www.safe.gov.cn/safe/rmbhlzjj/index.html",
+      "description": "外汇管理局-人民币汇率中间价",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "fx_spot_quote",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 外汇数据",
+        "人民币外汇即期报价"
+      ],
+      "line": 251,
+      "target_url": "http://www.chinamoney.com.cn/chinese/mkdatapfx/",
+      "description": "人民币外汇即期报价",
+      "limit": "单次返回实时行情数据"
+    },
+    {
+      "interface": "fx_swap_quote",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 外汇数据",
+        "人民币外汇远掉报价"
+      ],
+      "line": 317,
+      "target_url": "http://www.chinamoney.com.cn/chinese/mkdatapfx/",
+      "description": "人民币外汇远掉报价",
+      "limit": "单次返回实时行情数据"
+    },
+    {
+      "interface": "fx_c_swap_cm",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 外汇数据",
+        "外汇掉期 C-Swap 定盘曲线"
+      ],
+      "line": 388,
+      "target_url": "https://www.chinamoney.org.cn/chinese/bkcurvfsw",
+      "description": "中国外汇交易中心暨全国银行间同业拆借中心-基准-外汇市场-外汇掉期曲线-外汇掉期 C-Swap 定盘曲线",
+      "limit": "单次返回所有行情数据"
+    },
+    {
+      "interface": "fx_pair_quote",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 外汇数据",
+        "外币对即期报价"
+      ],
+      "line": 441,
+      "target_url": "http://www.chinamoney.com.cn/chinese/mkdatapfx/",
+      "description": "外币对即期报价",
+      "limit": "单次返回当前时点最近更新的即时数据"
+    },
+    {
+      "interface": "currency_pair_map",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 外汇数据",
+        "指定币种的所有货币对"
+      ],
+      "line": 493,
+      "target_url": "https://cn.investing.com/currencies/cny-jmd",
+      "description": "指定币种的所有能够获取到的货币对信息，历史数据可以调用 **ak.currency_history()** 获取",
+      "limit": "单次返回指定币种的所有能获取数据的货币对"
+    },
+    {
+      "interface": "macro_fx_sentiment",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 外汇数据",
+        "货币对-投机情绪报告"
+      ],
+      "line": 543,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_ssi_trends",
+      "description": "货币对-投机情绪报告",
+      "limit": "单次返回指定日期所有品种的数据(所指定的日期必须在当前交易日之前的30个交易日内)"
+    },
+    {
+      "interface": "fx_quote_baidu",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 外汇数据",
+        "外汇行情报价"
+      ],
+      "line": 607,
+      "target_url": "https://gushitong.baidu.com/top/foreign-rmb",
+      "description": "百度股市通-外汇-行情榜单",
+      "limit": "单次返回指定 symbol 当前时点的行情报价"
+    }
+  ]
+}

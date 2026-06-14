@@ -1,0 +1,760 @@
+{
+  "schema_version": 1,
+  "document": "fund_public",
+  "source_url": "https://akshare.akfamily.xyz/_sources/data/fund/fund_public.md.txt",
+  "sha256": "5e959bca9d54a57d67339f64f034e91cf3a107bf9eb0150799d935daf48ee3fd",
+  "interfaces": [
+    {
+      "interface": "fund_name_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金基本信息"
+      ],
+      "line": 5,
+      "target_url": "http://fund.eastmoney.com/fund.html",
+      "description": "东方财富网-天天基金网-基金数据-所有基金的基本信息数据",
+      "limit": "单次返回当前时刻所有历史数据"
+    },
+    {
+      "interface": "fund_individual_basic_info_xq",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金基本信息-雪球"
+      ],
+      "line": 57,
+      "target_url": "https://danjuanfunds.com/funding/000001",
+      "description": "雪球基金-基金详情",
+      "limit": "单次返回单只基金基本信息"
+    },
+    {
+      "interface": "fund_info_index_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金基本信息-指数型"
+      ],
+      "line": 110,
+      "target_url": "http://fund.eastmoney.com/trade/zs.html",
+      "description": "东方财富网-天天基金网-基金数据-基金基本信息-指数型",
+      "limit": "单次返回当前时刻所有历史数据"
+    },
+    {
+      "interface": "fund_purchase_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金申购状态"
+      ],
+      "line": 176,
+      "target_url": "http://fund.eastmoney.com/Fund_sgzt_bzdm.html#fcode,asc_1",
+      "description": "东方财富网站-天天基金网-基金数据-基金申购状态",
+      "limit": "单次返回当前时刻所有历史数据"
+    },
+    {
+      "interface": "fund_etf_spot_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金行情",
+        "ETF基金实时行情-东财"
+      ],
+      "line": 237,
+      "target_url": "https://quote.eastmoney.com/center/gridlist.html#fund_etf",
+      "description": "东方财富-ETF 实时行情",
+      "limit": "单次返回所有数据"
+    },
+    {
+      "interface": "fund_etf_spot_ths",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金行情",
+        "ETF基金实时行情-同花顺"
+      ],
+      "line": 321,
+      "target_url": "https://fund.10jqka.com.cn/datacenter/jz/kfs/etf/",
+      "description": "同花顺理财-基金数据-每日净值-ETF-实时行情",
+      "limit": "单次返回指定 date 的所有数据"
+    },
+    {
+      "interface": "fund_lof_spot_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金行情",
+        "LOF基金实时行情-东财"
+      ],
+      "line": 385,
+      "target_url": "https://quote.eastmoney.com/center/gridlist.html#fund_lof",
+      "description": "东方财富-LOF 实时行情",
+      "limit": "单次返回所有数据"
+    },
+    {
+      "interface": "fund_etf_category_sina",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金行情",
+        "基金实时行情-新浪"
+      ],
+      "line": 447,
+      "target_url": "http://vip.stock.finance.sina.com.cn/fund_center/index.html#jjhqetf",
+      "description": "新浪财经-基金列表及行情数据",
+      "limit": "单次返回指定 symbol 基金的所有数据"
+    },
+    {
+      "interface": "fund_etf_hist_min_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金行情",
+        "ETF基金分时行情-东财"
+      ],
+      "line": 548,
+      "target_url": "https://quote.eastmoney.com/sz159707.html",
+      "description": "东方财富-ETF 分时行情; 该接口只能获取近期的分时数据，注意时间周期的设置",
+      "limit": "单次返回指定 ETF、频率、复权调整和时间区间的分时数据, 其中 1 分钟数据只返回近 5 个交易日数据且不复权"
+    },
+    {
+      "interface": "fund_lof_hist_min_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金行情",
+        "LOF基金分时行情-东财"
+      ],
+      "line": 688,
+      "target_url": "https://quote.eastmoney.com/sz166009.html",
+      "description": "东方财富-LOF 分时行情; 该接口只能获取近期的分时数据，注意时间周期的设置",
+      "limit": "单次返回指定 LOF、频率、复权调整和时间区间的分时数据, 其中 1 分钟数据只返回近 5 个交易日数据且不复权"
+    },
+    {
+      "interface": "fund_etf_hist_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金行情",
+        "ETF基金历史行情-东财"
+      ],
+      "line": 828,
+      "target_url": "http://quote.eastmoney.com/sz159707.html",
+      "description": "东方财富-ETF 行情; 历史数据按日频率更新, 当日收盘价请在收盘后获取",
+      "limit": "单次返回指定 ETF、指定周期和指定日期间的历史行情日频率数据"
+    },
+    {
+      "interface": "fund_lof_hist_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金行情",
+        "LOF基金历史行情-东财"
+      ],
+      "line": 963,
+      "target_url": "https://quote.eastmoney.com/sz166009.html",
+      "description": "东方财富-LOF 行情; 历史数据按日频率更新, 当日收盘价请在收盘后获取",
+      "limit": "单次返回指定 LOF、指定周期和指定日期间的历史行情日频率数据"
+    },
+    {
+      "interface": "fund_etf_hist_sina",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金行情",
+        "基金历史行情-新浪"
+      ],
+      "line": 1101,
+      "target_url": "http://vip.stock.finance.sina.com.cn/fund_center/index.html#jjhqetf",
+      "description": "新浪财经-基金行情的日频率行情数据",
+      "limit": "单次返回指定基金的所有数据"
+    },
+    {
+      "interface": "fund_open_fund_daily_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金净值",
+        "开放式基金-实时数据"
+      ],
+      "line": 1157,
+      "target_url": "http://fund.eastmoney.com/fund.html#os_0;isall_0;ft_;pt_1",
+      "description": "东方财富网-天天基金网-基金数据, 此接口在每个交易日 **16:00-23:00** 更新当日的最新开放式基金净值数据",
+      "limit": "单次返回当前时刻所有历史数据"
+    },
+    {
+      "interface": "fund_open_fund_info_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金净值",
+        "开放式基金-历史数据"
+      ],
+      "line": 1215,
+      "target_url": "http://fund.eastmoney.com/pingzhongdata/710001.js",
+      "description": "东方财富网-天天基金网-基金数据-具体基金信息",
+      "limit": "单次返回当前时刻所有历史数据, 在查询基金数据的时候注意基金前后端问题"
+    },
+    {
+      "interface": "fund_money_fund_daily_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金净值",
+        "货币型基金-实时数据"
+      ],
+      "line": 1481,
+      "target_url": "http://fund.eastmoney.com/HBJJ_pjsyl.html",
+      "description": "东方财富网-天天基金网-基金数据-货币型基金收益, 此接口数据每个交易日 **16:00～23:00**",
+      "limit": "单次返回当前时刻所有历史数据"
+    },
+    {
+      "interface": "fund_money_fund_info_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金净值",
+        "货币型基金-历史数据"
+      ],
+      "line": 1541,
+      "target_url": "http://fundf10.eastmoney.com/jjjz_004186.html",
+      "description": "东方财富网-天天基金网-基金数据-货币型基金-历史净值",
+      "limit": "单次返回当前时刻所有历史数据"
+    },
+    {
+      "interface": "fund_financial_fund_daily_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金净值",
+        "理财型基金-实时数据"
+      ],
+      "line": 1593,
+      "target_url": "http://fund.eastmoney.com/lcjj.html#1_1__0__ljjz,desc_1_os1",
+      "description": "东方财富网-天天基金网-基金数据-理财型基金-实时数据, 此接口数据每个交易日 **16:00～23:00** 更新",
+      "limit": "该接口由于目标网站未更新数据，暂时不能返回数据"
+    },
+    {
+      "interface": "fund_financial_fund_info_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金净值",
+        "理财型基金-历史数据"
+      ],
+      "line": 1649,
+      "target_url": "http://fundf10.eastmoney.com/jjjz_000791.html",
+      "description": "东方财富网站-天天基金网-基金数据-理财型基金收益-历史净值明细",
+      "limit": "单次返回当前时刻所有历史数据"
+    },
+    {
+      "interface": "fund_graded_fund_daily_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金净值",
+        "分级基金-实时数据"
+      ],
+      "line": 1703,
+      "target_url": "http://fund.eastmoney.com/fjjj.html#1_1__0__zdf,desc_1",
+      "description": "东方财富网-天天基金网-基金数据-分级基金-实时数据, 此接口数据每个交易日 **16:00～23:00**",
+      "limit": "单次返回当前时刻所有历史数据"
+    },
+    {
+      "interface": "fund_graded_fund_info_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金净值",
+        "分级基金-历史数据"
+      ],
+      "line": 1761,
+      "target_url": "http://fundf10.eastmoney.com/jjjz_004186.html",
+      "description": "东方财富网站-天天基金网-基金数据-分级基金-历史数据",
+      "limit": "单次返回当前时刻所有历史数据"
+    },
+    {
+      "interface": "fund_etf_fund_daily_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金净值",
+        "场内交易基金-实时数据"
+      ],
+      "line": 1814,
+      "target_url": "http://fund.eastmoney.com/cnjy_dwjz.html",
+      "description": "东方财富网站-天天基金网-基金数据-场内交易基金-实时数据, 此接口数据每个交易日 **16:00～23:00**",
+      "limit": "单次返回当前时刻所有数据"
+    },
+    {
+      "interface": "fund_etf_fund_info_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金净值",
+        "场内交易基金-历史数据"
+      ],
+      "line": 1872,
+      "target_url": "http://fundf10.eastmoney.com/jjjz_004186.html",
+      "description": "东方财富网站-天天基金网-基金数据-场内交易基金-历史净值数据",
+      "limit": "单次返回当前时刻所有历史数据"
+    },
+    {
+      "interface": "fund_hk_fund_hist_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金净值",
+        "香港基金-历史数据"
+      ],
+      "line": 1928,
+      "target_url": "http://overseas.1234567.com.cn/f10/FundJz/968092#FHPS",
+      "description": "东方财富网站-天天基金网-基金数据-香港基金-历史净值明细",
+      "limit": "单次返回指定 code 和 symbol 所有历史数据"
+    },
+    {
+      "interface": "fund_fh_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "分红送配",
+        "基金分红"
+      ],
+      "line": 2016,
+      "target_url": "http://fund.eastmoney.com/data/fundfenhong.html",
+      "description": "天天基金网-基金数据-分红送配-基金分红",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "fund_cf_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "分红送配",
+        "基金拆分"
+      ],
+      "line": 2070,
+      "target_url": "http://fund.eastmoney.com/data/fundchaifen.html",
+      "description": "天天基金网-基金数据-分红送配-基金拆分",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "fund_fh_rank_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "分红送配",
+        "基金分红排行"
+      ],
+      "line": 2123,
+      "target_url": "http://fund.eastmoney.com/data/fundleijifenhong.html",
+      "description": "天天基金网-基金数据-分红送配-基金分红排行",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "fund_open_fund_rank_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金排行",
+        "开放式基金排行"
+      ],
+      "line": 2178,
+      "target_url": "https://fund.eastmoney.com/data/fundranking.html",
+      "description": "东方财富网-数据中心-开放式基金排行",
+      "limit": "单次返回当前时刻所有数据"
+    },
+    {
+      "interface": "fund_exchange_rank_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金排行",
+        "场内交易基金排行榜"
+      ],
+      "line": 2244,
+      "target_url": "https://fund.eastmoney.com/data/fbsfundranking.html",
+      "description": "东方财富网-数据中心-场内交易基金排行榜",
+      "limit": "单次返回当前时刻所有数据, 每个交易日 17 点后更新"
+    },
+    {
+      "interface": "fund_money_rank_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金排行",
+        "货币型基金排行"
+      ],
+      "line": 2309,
+      "target_url": "https://fund.eastmoney.com/data/hbxfundranking.html",
+      "description": "东方财富网-数据中心-货币型基金排行",
+      "limit": "单次返回当前时刻所有数据, 每个交易日 17 点后更新, 货币基金的单位净值均为 1.0000 元，最新一年期定存利率: 1.50%"
+    },
+    {
+      "interface": "fund_lcx_rank_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金排行",
+        "理财基金排行"
+      ],
+      "line": 2375,
+      "target_url": "https://fund.eastmoney.com/data/lcxfundranking.html#t;c0;r;sSYL_Z;ddesc;pn50;f;os1;",
+      "description": "东方财富网-数据中心-理财基金排行, 每个交易日17点后更新, 货币基金的单位净值均为 1.0000 元，最新一年期定存利率: 1.50%",
+      "limit": "由于目标网站没有数据，该接口暂时未能返回数据"
+    },
+    {
+      "interface": "fund_hk_rank_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金排行",
+        "香港基金排行"
+      ],
+      "line": 2429,
+      "target_url": "https://overseas.1234567.com.cn/FundList",
+      "description": "东方财富网-数据中心-基金排行-香港基金排行",
+      "limit": "单次返回当前时刻所有数据"
+    },
+    {
+      "interface": "fund_individual_achievement_xq",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金业绩-雪球"
+      ],
+      "line": 2495,
+      "target_url": "https://danjuanfunds.com/rn/funding/:code/RankInfo?symbol=000001&fd_type=2&btn_pos=1",
+      "description": "雪球基金-基金详情-基金业绩-详情",
+      "limit": "单次返回单只基金业绩详情"
+    },
+    {
+      "interface": "fund_value_estimation_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "净值估算"
+      ],
+      "line": 2567,
+      "target_url": "http://fund.eastmoney.com/fundguzhi.html",
+      "description": "东方财富网-数据中心-净值估算",
+      "limit": "单次返回当前交易日指定 symbol 的所有数据"
+    },
+    {
+      "interface": "fund_individual_analysis_xq",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金数据分析"
+      ],
+      "line": 2623,
+      "target_url": "https://danjuanfunds.com/funding/000001",
+      "description": "雪球基金-基金详情-数据分析",
+      "limit": "返回单只基金历史表现分析数据"
+    },
+    {
+      "interface": "fund_individual_profit_probability_xq",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金盈利概率"
+      ],
+      "line": 2669,
+      "target_url": "https://danjuanfunds.com/funding/000001",
+      "description": "雪球基金-基金详情-盈利概率；历史任意时点买入，持有满X时间，盈利概率，以及平均收益",
+      "limit": "单次返回单只基金历史任意时点买入，持有满 X 时间，盈利概率，以及平均收益"
+    },
+    {
+      "interface": "fund_individual_detail_hold_xq",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金持仓资产比例"
+      ],
+      "line": 2713,
+      "target_url": "https://danjuanfunds.com/rn/fund-detail/archive?id=103&code=000001",
+      "description": "雪球基金-基金详情-基金持仓-详情",
+      "limit": "单次返回单只基金指定日期的持仓大类资产比例"
+    },
+    {
+      "interface": "fund_individual_detail_info_xq",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金交易规则"
+      ],
+      "line": 2756,
+      "target_url": "https://danjuanfunds.com/djapi/fund/detail/675091",
+      "description": "雪球基金-基金详情-基金交易规则",
+      "limit": "单次返回单只基金基金交易规则"
+    },
+    {
+      "interface": "fund_portfolio_hold_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金持仓"
+      ],
+      "line": 2804,
+      "target_url": "https://fundf10.eastmoney.com/ccmx_000001.html",
+      "description": "天天基金网-基金档案-投资组合-基金持仓",
+      "limit": "单次返回指定 symbol 和 date 的所有持仓数据"
+    },
+    {
+      "interface": "fund_portfolio_bond_hold_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "债券持仓"
+      ],
+      "line": 2858,
+      "target_url": "https://fundf10.eastmoney.com/ccmx_000001.html",
+      "description": "天天基金网-基金档案-投资组合-债券持仓",
+      "limit": "单次返回指定 symbol 和 date 的所有持仓数据"
+    },
+    {
+      "interface": "fund_portfolio_industry_allocation_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "行业配置"
+      ],
+      "line": 2952,
+      "target_url": "https://fundf10.eastmoney.com/hytz_000001.html",
+      "description": "天天基金网-基金档案-投资组合-行业配置",
+      "limit": "单次返回指定 symbol 和 date 的所有持仓数据"
+    },
+    {
+      "interface": "fund_portfolio_change_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "重大变动"
+      ],
+      "line": 3031,
+      "target_url": "https://fundf10.eastmoney.com/ccbd_000001.html",
+      "description": "天天基金网-基金档案-投资组合-重大变动",
+      "limit": "单次返回指定 symbol、indicator 和 date 的所有重大变动数据"
+    },
+    {
+      "interface": "fund_rating_all",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金评级",
+        "基金评级总汇"
+      ],
+      "line": 3097,
+      "target_url": "https://fund.eastmoney.com/data/fundrating.html",
+      "description": "天天基金网-基金评级-基金评级总汇",
+      "limit": "单次返回所有基金评级数据"
+    },
+    {
+      "interface": "fund_rating_sh",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金评级",
+        "上海证券评级"
+      ],
+      "line": 3155,
+      "target_url": "https://fund.eastmoney.com/data/fundrating_3.html",
+      "description": "天天基金网-基金评级-上海证券评级",
+      "limit": "单次返回指定交易日的所有基金评级数据"
+    },
+    {
+      "interface": "fund_rating_zs",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金评级",
+        "招商证券评级"
+      ],
+      "line": 3219,
+      "target_url": "http://fund.eastmoney.com/data/fundrating_2.html",
+      "description": "天天基金网-基金评级-招商证券评级",
+      "limit": "单次返回指定交易日的所有基金评级数据"
+    },
+    {
+      "interface": "fund_rating_ja",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金评级",
+        "济安金信评级"
+      ],
+      "line": 3280,
+      "target_url": "https://fund.eastmoney.com/data/fundrating_4.html",
+      "description": "天天基金网-基金评级-济安金信评级",
+      "limit": "单次返回指定交易日的所有基金评级数据"
+    },
+    {
+      "interface": "fund_manager_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金经理"
+      ],
+      "line": 3342,
+      "target_url": "https://fund.eastmoney.com/manager/default.html",
+      "description": "天天基金网-基金数据-基金经理大全",
+      "limit": "单次返回所有基金经理数据"
+    },
+    {
+      "interface": "fund_new_found_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "新发基金"
+      ],
+      "line": 3397,
+      "target_url": "https://fund.eastmoney.com/data/xinfound.html",
+      "description": "天天基金网-基金数据-新发基金-新成立基金",
+      "limit": "单次返回所有新发基金数据"
+    },
+    {
+      "interface": "fund_scale_open_sina",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金规模",
+        "开放式基金"
+      ],
+      "line": 3458,
+      "target_url": "https://vip.stock.finance.sina.com.cn/fund_center/index.html#jjhqetf",
+      "description": "基金数据中心-基金规模-开放式基金",
+      "limit": "单次返回指定 symbol 的基金规模数据"
+    },
+    {
+      "interface": "fund_scale_close_sina",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金规模",
+        "封闭式基金"
+      ],
+      "line": 3515,
+      "target_url": "https://vip.stock.finance.sina.com.cn/fund_center/index.html#jjhqetf",
+      "description": "基金数据中心-基金规模-封闭式基金",
+      "limit": "单次返回所有封闭式基金的基金规模数据"
+    },
+    {
+      "interface": "fund_scale_structured_sina",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金规模",
+        "分级子基金"
+      ],
+      "line": 3572,
+      "target_url": "https://vip.stock.finance.sina.com.cn/fund_center/index.html#jjgmfjall",
+      "description": "基金数据中心-基金规模-分级子基金",
+      "limit": "单次返回所有分级子基金的基金规模数据"
+    },
+    {
+      "interface": "fund_aum_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金公司规模",
+        "基金规模详情"
+      ],
+      "line": 3631,
+      "target_url": "https://fund.eastmoney.com/Company/lsgm.html",
+      "description": "天天基金网-基金数据-基金规模",
+      "limit": "单次返回所有基金规模数据"
+    },
+    {
+      "interface": "fund_aum_trend_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金公司规模",
+        "基金规模走势"
+      ],
+      "line": 3686,
+      "target_url": "http://fund.eastmoney.com/Company/default.html",
+      "description": "天天基金网-基金数据-市场全部基金规模走势",
+      "limit": "单次返回所有市场全部基金规模走势数据"
+    },
+    {
+      "interface": "fund_aum_hist_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金公司规模",
+        "基金公司历年管理规模"
+      ],
+      "line": 3745,
+      "target_url": "http://fund.eastmoney.com/Company/lsgm.html",
+      "description": "天天基金网-基金数据-基金公司历年管理规模排行列表",
+      "limit": "单次返回所有基金公司历年管理规模排行列表数据"
+    },
+    {
+      "interface": "reits_realtime_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "REITs",
+        "REITs-行情"
+      ],
+      "line": 3804,
+      "target_url": "http://quote.eastmoney.com/center/gridlist.html#fund_reits_all",
+      "description": "东方财富网-行情中心-REITs-沪深 REITs",
+      "limit": "单次返回所有 REITs 的实时行情数据"
+    },
+    {
+      "interface": "fund_report_stock_cninfo",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金报告",
+        "基金重仓股"
+      ],
+      "line": 3887,
+      "target_url": "https://webapi.cninfo.com.cn/#/thematicStatistics",
+      "description": "巨潮资讯-数据中心-专题统计-基金报表-基金重仓股",
+      "limit": "返回指定 date 的所有数据; date 从 2017 年开始"
+    },
+    {
+      "interface": "fund_report_industry_allocation_cninfo",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金报告",
+        "基金行业配置"
+      ],
+      "line": 3941,
+      "target_url": "https://webapi.cninfo.com.cn/#/thematicStatistics",
+      "description": "巨潮资讯-数据中心-专题统计-基金报表-基金行业配置",
+      "limit": "返回指定 date 的所有数据; date 从 2017 年开始"
+    },
+    {
+      "interface": "fund_report_asset_allocation_cninfo",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金报告",
+        "基金资产配置"
+      ],
+      "line": 4002,
+      "target_url": "https://webapi.cninfo.com.cn/#/thematicStatistics",
+      "description": "巨潮资讯-数据中心-专题统计-基金报表-基金资产配置",
+      "limit": "返回所有基金资产配置数据"
+    },
+    {
+      "interface": "fund_scale_change_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "规模份额",
+        "规模变动"
+      ],
+      "line": 4058,
+      "target_url": "https://fund.eastmoney.com/data/gmbdlist.html",
+      "description": "天天基金网-基金数据-规模份额-规模变动",
+      "limit": "返回所有规模变动数据"
+    },
+    {
+      "interface": "fund_hold_structure_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "规模份额",
+        "持有人结构"
+      ],
+      "line": 4113,
+      "target_url": "https://fund.eastmoney.com/data/cyrjglist.html",
+      "description": "天天基金网-基金数据-规模份额-持有人结构",
+      "limit": "返回所有持有人结构数据"
+    },
+    {
+      "interface": "fund_stock_position_lg",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金仓位",
+        "股票型基金仓位"
+      ],
+      "line": 4197,
+      "target_url": "https://legulegu.com/stockdata/fund-position/pos-stock",
+      "description": "乐咕乐股-基金仓位-股票型基金仓位",
+      "limit": "返回所有历史数据"
+    },
+    {
+      "interface": "fund_balance_position_lg",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金仓位",
+        "平衡混合型基金仓位"
+      ],
+      "line": 4247,
+      "target_url": "https://legulegu.com/stockdata/fund-position/pos-pingheng",
+      "description": "乐咕乐股-基金仓位-平衡混合型基金仓位",
+      "limit": "返回所有历史数据"
+    },
+    {
+      "interface": "fund_linghuo_position_lg",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金仓位",
+        "灵活配置型基金仓位"
+      ],
+      "line": 4297,
+      "target_url": "https://legulegu.com/stockdata/fund-position/pos-linghuo",
+      "description": "乐咕乐股-基金仓位-灵活配置型基金仓位",
+      "limit": "返回所有历史数据"
+    },
+    {
+      "interface": "fund_announcement_personnel_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 公募基金数据",
+        "基金公告",
+        "人事公告"
+      ],
+      "line": 4349,
+      "target_url": "http://fundf10.eastmoney.com/jjgg_000001_4.html",
+      "description": "东方财富网站-天天基金网-基金档案-基金公告-人事调整",
+      "limit": "返回所有历史数据"
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "document": "qhkc_commodity",
+  "source_url": "https://akshare.akfamily.xyz/_sources/data/qhkc/commodity.md.txt",
+  "sha256": "ae8d51a55c91acc4a2b478ed05e95f0ae6f5a1372b319cc15e5df39b3a02851f",
+  "interfaces": [
+    {
+      "interface": "variety_positions",
+      "section": [
+        "商品",
+        "合约持仓数据"
+      ],
+      "line": 7,
+      "description": "合约持仓数据接口"
+    },
+    {
+      "interface": "variety_all_positions",
+      "section": [
+        "商品",
+        "商品持仓数据"
+      ],
+      "line": 74,
+      "description": "商品持仓数据接口"
+    },
+    {
+      "interface": "variety_net_positions",
+      "section": [
+        "商品",
+        "商品净持仓数据"
+      ],
+      "line": 165,
+      "description": "商品净持仓数据接口"
+    },
+    {
+      "interface": "variety_quotes",
+      "section": [
+        "商品",
+        "合约行情数据"
+      ],
+      "line": 207,
+      "description": "合约行情数据接口"
+    },
+    {
+      "interface": "variety_money",
+      "section": [
+        "商品",
+        "商品沉淀资金数据"
+      ],
+      "line": 257,
+      "description": "商品沉淀资金数据接口"
+    },
+    {
+      "interface": "variety_bbr",
+      "section": [
+        "商品",
+        "合约多空比数据"
+      ],
+      "line": 298,
+      "description": "合约多空比数据接口"
+    },
+    {
+      "interface": "variety_net_money_chge",
+      "section": [
+        "商品",
+        "合约净持仓保证金变化数据"
+      ],
+      "line": 339,
+      "description": "合约净持仓保证金变化数据接口"
+    },
+    {
+      "interface": "variety_net_money",
+      "section": [
+        "商品",
+        "合约净持仓保证金数据"
+      ],
+      "line": 406,
+      "description": "合约净持仓保证金数据接口"
+    },
+    {
+      "interface": "variety_total_money",
+      "section": [
+        "商品",
+        "合约总持仓保证金数据"
+      ],
+      "line": 472,
+      "description": "合约总持仓保证金数据接口"
+    },
+    {
+      "interface": "variety_profit",
+      "section": [
+        "商品",
+        "商品的席位盈亏数据"
+      ],
+      "line": 539,
+      "description": "商品的席位盈亏数据接口"
+    },
+    {
+      "interface": "variety_strategies",
+      "section": [
+        "商品",
+        "自研指标数据"
+      ],
+      "line": 641,
+      "description": "自研指标数据接口"
+    },
+    {
+      "interface": "variety_longhu_top",
+      "section": [
+        "商品",
+        "龙虎比排行数据",
+        "多头排行"
+      ],
+      "line": 687,
+      "description": "龙虎比排行数据接口"
+    },
+    {
+      "interface": "variety_longhu_top",
+      "section": [
+        "商品",
+        "龙虎比排行数据",
+        "空头排行"
+      ],
+      "line": 737,
+      "description": "龙虎比排行数据接口"
+    },
+    {
+      "interface": "variety_niuxiong_top",
+      "section": [
+        "商品",
+        "牛熊线排行数据",
+        "多头排行"
+      ],
+      "line": 789,
+      "description": "牛熊线排行数据接口"
+    },
+    {
+      "interface": "variety_niuxiong_top",
+      "section": [
+        "商品",
+        "牛熊线排行数据",
+        "空头排行"
+      ],
+      "line": 839,
+      "description": "牛熊线排行数据接口"
+    },
+    {
+      "interface": "variety_reports",
+      "section": [
+        "商品",
+        "商品相关研报数据"
+      ],
+      "line": 889,
+      "description": "商品相关研报数据接口"
+    },
+    {
+      "interface": "variety_all",
+      "section": [
+        "商品",
+        "商品列表数据"
+      ],
+      "line": 938,
+      "description": "商品列表数据接口"
+    },
+    {
+      "interface": "variety_list",
+      "section": [
+        "商品",
+        "合约索引"
+      ],
+      "line": 1040,
+      "description": "合约索引数据接口"
+    },
+    {
+      "interface": "variety_no_futures",
+      "section": [
+        "商品",
+        "非期货公司净持仓"
+      ],
+      "line": 1088,
+      "description": "非期货公司净持仓数据接口"
+    }
+  ]
+}

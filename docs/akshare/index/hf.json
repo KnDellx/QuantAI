@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "document": "hf",
+  "source_url": "https://akshare.akfamily.xyz/_sources/data/hf/hf.md.txt",
+  "sha256": "0612476ad5c701423448f792d1058dec8fc046e8111a2166f0fa1b05fc22d739",
+  "interfaces": [
+    {
+      "interface": "hf_sp_500",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 高频数据",
+        "标普 500 指数"
+      ],
+      "line": 5,
+      "target_url": "https://github.com/FutureSharks/financial-data",
+      "description": "获取标普 500 指数的分钟数据, 由于数据量比较大, 需要等待, 由于服务器在国外, 建议使用代理访问"
+    }
+  ]
+}

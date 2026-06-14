@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "document": "qhkc_fund",
+  "source_url": "https://akshare.akfamily.xyz/_sources/data/qhkc/fund.md.txt",
+  "sha256": "44dfd733feee7a193bf2acc1aad3b9f142d96e28415085e5bd5051db043df317",
+  "interfaces": [
+    {
+      "interface": "commodity_flow_long",
+      "section": [
+        "资金",
+        "每日净流多列表(商品)"
+      ],
+      "line": 7,
+      "description": "每日净流多列表（商品）接口"
+    },
+    {
+      "interface": "commodity_flow_short",
+      "section": [
+        "资金",
+        "每日净流空列表(商品)"
+      ],
+      "line": 56,
+      "description": "每日净流空列表(商品)接口"
+    },
+    {
+      "interface": "stock_flow_long",
+      "section": [
+        "资金",
+        "每日净流多列表(指数)"
+      ],
+      "line": 105,
+      "description": "每日净流多列表(指数)接口"
+    },
+    {
+      "interface": "stock_flow_short",
+      "section": [
+        "资金",
+        "每日净流空列表(指数)"
+      ],
+      "line": 154,
+      "description": "每日净流空列表(指数)接口"
+    },
+    {
+      "interface": "money_in_out",
+      "section": [
+        "资金",
+        "每日商品保证金沉淀变化"
+      ],
+      "line": 203,
+      "description": "每日商品保证金沉淀变化接口"
+    }
+  ]
+}

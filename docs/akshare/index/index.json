@@ -1,0 +1,1017 @@
+{
+  "schema_version": 1,
+  "document": "index",
+  "source_url": "https://akshare.akfamily.xyz/_sources/data/index/index.md.txt",
+  "sha256": "ed90fc1948a38aebac772e65a719a433346525c65991aa96a7af6d6a337194ba",
+  "interfaces": [
+    {
+      "interface": "stock_zh_index_spot_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "A股股票指数",
+        "实时行情数据-东财"
+      ],
+      "line": 7,
+      "target_url": "https://quote.eastmoney.com/center/gridlist.html#index_sz",
+      "description": "东方财富网-行情中心-沪深京指数",
+      "limit": "单次返回所有指数的实时行情数据"
+    },
+    {
+      "interface": "stock_zh_index_spot_sina",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "A股股票指数",
+        "实时行情数据-新浪"
+      ],
+      "line": 69,
+      "target_url": "https://vip.stock.finance.sina.com.cn/mkt/#hs_s",
+      "description": "新浪财经-中国股票指数数据",
+      "limit": "单次返回所有指数的实时行情数据"
+    },
+    {
+      "interface": "stock_zh_index_daily",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "A股股票指数",
+        "历史行情数据",
+        "历史行情数据-新浪"
+      ],
+      "line": 130,
+      "target_url": "https://finance.sina.com.cn/realstock/company/sz399552/nc.shtml(示例)",
+      "description": "股票指数的历史数据按日频率更新",
+      "limit": "单次返回指定 symbol 的所有历史行情数据"
+    },
+    {
+      "interface": "stock_zh_index_daily_tx",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "A股股票指数",
+        "历史行情数据",
+        "历史行情数据-腾讯"
+      ],
+      "line": 184,
+      "target_url": "https://gu.qq.com/sh000919/zs",
+      "description": "股票指数(或者股票)历史行情数据, 支持自定义时间范围",
+      "limit": "单次返回具体某个股票指数(或者股票)指定时间范围内的历史行情数据"
+    },
+    {
+      "interface": "stock_zh_index_daily_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "A股股票指数",
+        "历史行情数据",
+        "历史行情数据-东方财富"
+      ],
+      "line": 240,
+      "target_url": "http://quote.eastmoney.com/center/hszs.html",
+      "description": "东方财富股票指数数据, 历史数据按日频率更新",
+      "limit": "单次返回具体指数的所有历史行情数据"
+    },
+    {
+      "interface": "index_zh_a_hist",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "A股股票指数",
+        "历史行情数据",
+        "历史行情数据-通用"
+      ],
+      "line": 297,
+      "target_url": "http://quote.eastmoney.com/center/hszs.html",
+      "description": "东方财富网-中国股票指数-行情数据",
+      "limit": "单次返回具体指数指定 period 从 start_date 到 end_date 的之间的近期数据"
+    },
+    {
+      "interface": "index_zh_a_hist_min_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "A股股票指数",
+        "分时行情数据"
+      ],
+      "line": 358,
+      "target_url": "https://quote.eastmoney.com/center/hszs.html",
+      "description": "东方财富网-指数数据-分时行情",
+      "limit": "单次返回具体指数指定 period 从 start_date 到 end_date 的之间的近期数据，该接口不能返回所有历史数据"
+    },
+    {
+      "interface": "stock_hk_index_spot_sina",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "港股股票指数",
+        "实时行情数据-新浪"
+      ],
+      "line": 419,
+      "target_url": "https://vip.stock.finance.sina.com.cn/mkt/#zs_hk",
+      "description": "新浪财经-行情中心-港股指数",
+      "limit": "单次返回所有数据"
+    },
+    {
+      "interface": "stock_hk_index_daily_sina",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "港股股票指数",
+        "历史行情数据-新浪"
+      ],
+      "line": 503,
+      "target_url": "https://stock.finance.sina.com.cn/hkstock/quotes/CES100.html",
+      "description": "新浪财经-港股指数-历史行情数据",
+      "limit": "单次返回指定 symbol 的所有数据"
+    },
+    {
+      "interface": "stock_hk_index_spot_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "港股股票指数",
+        "实时行情数据-东财"
+      ],
+      "line": 557,
+      "target_url": "https://quote.eastmoney.com/center/gridlist.html#hk_index",
+      "description": "东方财富网-行情中心-港股-指数实时行情",
+      "limit": "单次返回所有数据"
+    },
+    {
+      "interface": "stock_hk_index_daily_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "港股股票指数",
+        "历史行情数据-东财"
+      ],
+      "line": 618,
+      "target_url": "https://quote.eastmoney.com/gb/zsHSTECF2L.html",
+      "description": "东方财富网-港股-股票指数数据",
+      "limit": "单次返回指定 symbol 的所有数据"
+    },
+    {
+      "interface": "index_us_stock_sina",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "美股股票指数",
+        "指数行情"
+      ],
+      "line": 673,
+      "target_url": "https://stock.finance.sina.com.cn/usstock/quotes/.IXIC.html",
+      "description": "新浪财经-美股指数行情"
+    },
+    {
+      "interface": "index_global_spot_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "全球指数",
+        "全球指数-实时行情数据"
+      ],
+      "line": 728,
+      "target_url": "https://quote.eastmoney.com/center/gridlist.html#global_qtzs",
+      "description": "东方财富网-行情中心-全球指数-实时行情数据"
+    },
+    {
+      "interface": "index_global_hist_em",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "全球指数",
+        "全球指数-历史行情数据-东财"
+      ],
+      "line": 831,
+      "target_url": "https://quote.eastmoney.com/gb/zsUDI.html",
+      "description": "东方财富网-行情中心-全球指数-历史行情数据"
+    },
+    {
+      "interface": "index_global_hist_sina",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "全球指数",
+        "全球指数-历史行情数据-新浪"
+      ],
+      "line": 885,
+      "target_url": "https://finance.sina.com.cn/stock/globalindex/quotes/UKX",
+      "description": "新浪财经-行情中心-环球市场-历史行情",
+      "limit": "单次返回最近的 1000 条数据"
+    },
+    {
+      "interface": "index_stock_cons",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "中国股票指数成份",
+        "最新成份"
+      ],
+      "line": 941,
+      "target_url": "http://vip.stock.finance.sina.com.cn/corp/view/vII_NewestComponent.php?page=1&indexid=399639",
+      "description": "指定指数的最新成份股票信息, 注意该接口返回的数据有部分是重复会导致数据缺失, 可以调用 **ak.index_stock_cons_sina()** 获取主流指数数据, 或调用**ak.index_stock_cons_csindex()**获取中证指数网提供的成分数据"
+    },
+    {
+      "interface": "index_stock_cons_csindex",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "中国股票指数成份",
+        "中证指数成份股"
+      ],
+      "line": 1750,
+      "target_url": "http://www.csindex.com.cn/zh-CN/indices/index-detail/000300",
+      "description": "中证指数网站-成份股目录，可以通过 ak.index_csindex_all() 获取所有指数"
+    },
+    {
+      "interface": "index_stock_cons_weight_csindex",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "中国股票指数成份",
+        "中证指数成份股权重"
+      ],
+      "line": 1805,
+      "target_url": "http://www.csindex.com.cn/zh-CN/indices/index-detail/000300",
+      "description": "中证指数网站-成份股权重"
+    },
+    {
+      "interface": "index_all_cni",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "国证指数",
+        "全部指数"
+      ],
+      "line": 1863,
+      "target_url": "http://www.cnindex.com.cn/zh_indices/sese/index.html?act_menu=1&index_type=-1",
+      "description": "国证指数-最近交易日的所有指数的代码和基本信息"
+    },
+    {
+      "interface": "index_hist_cni",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "国证指数",
+        "指数行情"
+      ],
+      "line": 1919,
+      "target_url": "http://www.cnindex.com.cn/module/index-detail.html?act_menu=1&indexCode=399001",
+      "description": "国证指数-具体指数的日频率行情数据"
+    },
+    {
+      "interface": "index_detail_cni",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "国证指数",
+        "指数样本详情"
+      ],
+      "line": 1975,
+      "target_url": "http://www.cnindex.com.cn/module/index-detail.html?act_menu=1&indexCode=399001",
+      "description": "国证指数-指数样本详情数据；20251125 开始只能获取近期的数据"
+    },
+    {
+      "interface": "index_detail_hist_cni",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "国证指数",
+        "历史样本"
+      ],
+      "line": 2028,
+      "target_url": "http://www.cnindex.com.cn/module/index-detail.html?act_menu=1&indexCode=399001",
+      "description": "国证指数-历史样本数据，返回所有历史数据"
+    },
+    {
+      "interface": "index_detail_hist_adjust_cni",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "国证指数",
+        "历史调样"
+      ],
+      "line": 2081,
+      "target_url": "http://www.cnindex.com.cn/module/index-detail.html?act_menu=1&indexCode=399001",
+      "description": "国证指数-样本详情-历史调样"
+    },
+    {
+      "interface": "index_option_50etf_qvix",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "期权波动率指数",
+        "50ETF 期权波动率指数"
+      ],
+      "line": 2135,
+      "target_url": "http://1.optbbs.com/s/vix.shtml?50ETF",
+      "description": "50ETF 期权波动率指数 QVIX; 又称中国版的恐慌指数",
+      "limit": "单次返回所有数据"
+    },
+    {
+      "interface": "index_option_50etf_min_qvix",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "期权波动率指数",
+        "50ETF 期权波动率指数-分时"
+      ],
+      "line": 2188,
+      "target_url": "http://1.optbbs.com/s/vix.shtml?50ETF",
+      "description": "50ETF 期权波动率指数-分时",
+      "limit": "单次返回最近交易日的分时数据"
+    },
+    {
+      "interface": "index_option_300etf_qvix",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "期权波动率指数",
+        "300ETF 期权波动率指数"
+      ],
+      "line": 2238,
+      "target_url": "https://1.optbbs.com/s/vix.shtml?300ETF",
+      "description": "300ETF 期权波动率指数 QVIX",
+      "limit": "单次返回所有数据"
+    },
+    {
+      "interface": "index_option_300etf_min_qvix",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "期权波动率指数",
+        "300ETF 期权波动率指数-分时"
+      ],
+      "line": 2291,
+      "target_url": "https://1.optbbs.com/s/vix.shtml?300ETF",
+      "description": "300ETF 期权波动率指数-分时",
+      "limit": "单次返回最近交易日的分时数据"
+    },
+    {
+      "interface": "index_option_500etf_qvix",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "期权波动率指数",
+        "500ETF 期权波动率指数"
+      ],
+      "line": 2341,
+      "target_url": "http://1.optbbs.com/s/vix.shtml?500ETF",
+      "description": "500ETF 期权波动率指数 QVIX",
+      "limit": "单次返回所有数据"
+    },
+    {
+      "interface": "index_option_500etf_min_qvix",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "期权波动率指数",
+        "500ETF 期权波动率指数-分时"
+      ],
+      "line": 2394,
+      "target_url": "http://1.optbbs.com/s/vix.shtml?500ETF",
+      "description": "500ETF 期权波动率指数-分时",
+      "limit": "单次返回最近交易日的分时数据"
+    },
+    {
+      "interface": "index_option_cyb_qvix",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "期权波动率指数",
+        "创业板 期权波动率指数"
+      ],
+      "line": 2444,
+      "target_url": "http://1.optbbs.com/s/vix.shtml?CYB",
+      "description": "创业板 期权波动率指数 QVIX",
+      "limit": "单次返回所有数据"
+    },
+    {
+      "interface": "index_option_cyb_min_qvix",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "期权波动率指数",
+        "创业板 期权波动率指数-分时"
+      ],
+      "line": 2497,
+      "target_url": "http://1.optbbs.com/s/vix.shtml?CYB",
+      "description": "创业板 期权波动率指数-分时",
+      "limit": "单次返回最近交易日的分时数据"
+    },
+    {
+      "interface": "index_option_kcb_qvix",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "期权波动率指数",
+        "科创板 期权波动率指数"
+      ],
+      "line": 2547,
+      "target_url": "http://1.optbbs.com/s/vix.shtml?KCB",
+      "description": "科创板 期权波动率指数 QVIX",
+      "limit": "单次返回所有数据"
+    },
+    {
+      "interface": "index_option_kcb_min_qvix",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "期权波动率指数",
+        "科创板 期权波动率指数-分时"
+      ],
+      "line": 2600,
+      "target_url": "http://1.optbbs.com/s/vix.shtml?KCB",
+      "description": "科创板 期权波动率指数-分时",
+      "limit": "单次返回最近交易日的分时数据"
+    },
+    {
+      "interface": "index_option_100etf_qvix",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "期权波动率指数",
+        "深证100ETF 期权波动率指数"
+      ],
+      "line": 2650,
+      "target_url": "http://1.optbbs.com/s/vix.shtml?100ETF",
+      "description": "深证100ETF 期权波动率指数 QVIX",
+      "limit": "单次返回所有数据"
+    },
+    {
+      "interface": "index_option_100etf_min_qvix",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "期权波动率指数",
+        "深证100ETF 期权波动率指数-分时"
+      ],
+      "line": 2703,
+      "target_url": "http://1.optbbs.com/s/vix.shtml?100ETF",
+      "description": "深证100ETF 期权波动率指数-分时",
+      "limit": "单次返回最近交易日的分时数据"
+    },
+    {
+      "interface": "index_option_300index_qvix",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "期权波动率指数",
+        "中证300股指 期权波动率指数"
+      ],
+      "line": 2753,
+      "target_url": "http://1.optbbs.com/s/vix.shtml?Index",
+      "description": "中证300股指 期权波动率指数 QVIX",
+      "limit": "单次返回所有数据"
+    },
+    {
+      "interface": "index_option_300index_min_qvix",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "期权波动率指数",
+        "中证300股指 期权波动率指数-分时"
+      ],
+      "line": 2806,
+      "target_url": "http://1.optbbs.com/s/vix.shtml?Index",
+      "description": "中证300股指 期权波动率指数-分时",
+      "limit": "单次返回最近交易日的分时数据"
+    },
+    {
+      "interface": "index_option_1000index_qvix",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "期权波动率指数",
+        "中证1000股指 期权波动率指数"
+      ],
+      "line": 2856,
+      "target_url": "http://1.optbbs.com/s/vix.shtml?Index1000",
+      "description": "中证1000股指 期权波动率指数 QVIX",
+      "limit": "单次返回所有数据"
+    },
+    {
+      "interface": "index_option_1000index_min_qvix",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "期权波动率指数",
+        "中证1000股指 期权波动率指数-分时"
+      ],
+      "line": 2909,
+      "target_url": "http://1.optbbs.com/s/vix.shtml?Index1000",
+      "description": "中证1000股指 期权波动率指数-分时",
+      "limit": "单次返回最近交易日的分时数据"
+    },
+    {
+      "interface": "index_option_50index_qvix",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "期权波动率指数",
+        "上证50股指 期权波动率指数"
+      ],
+      "line": 2959,
+      "target_url": "http://1.optbbs.com/s/vix.shtml?50index",
+      "description": "上证50股指 期权波动率指数 QVIX",
+      "limit": "单次返回所有数据"
+    },
+    {
+      "interface": "index_option_50index_min_qvix",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "期权波动率指数",
+        "上证50股指 期权波动率指数-分时"
+      ],
+      "line": 3012,
+      "target_url": "http://1.optbbs.com/s/vix.shtml?50index",
+      "description": "上证50股指 期权波动率指数-分时",
+      "limit": "单次返回最近交易日的分时数据"
+    },
+    {
+      "interface": "sw_index_first_info",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "申万一级行业信息"
+      ],
+      "line": 3062,
+      "target_url": "https://legulegu.com/stockdata/sw-industry-overview#level1",
+      "description": "申万一级行业信息"
+    },
+    {
+      "interface": "sw_index_second_info",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "申万二级行业信息"
+      ],
+      "line": 3134,
+      "target_url": "https://legulegu.com/stockdata/sw-industry-overview#level1",
+      "description": "申万二级行业信息"
+    },
+    {
+      "interface": "sw_index_third_info",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "申万三级行业信息"
+      ],
+      "line": 3188,
+      "target_url": "https://legulegu.com/stockdata/sw-industry-overview#level1",
+      "description": "申万三级行业信息"
+    },
+    {
+      "interface": "sw_index_third_cons",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "申万三级行业成份"
+      ],
+      "line": 3241,
+      "target_url": "https://legulegu.com/stockdata/index-composition?industryCode=851921.SI",
+      "description": "申万三级行业成份"
+    },
+    {
+      "interface": "spot_goods",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "商品现货价格指数"
+      ],
+      "line": 3300,
+      "target_url": "http://finance.sina.com.cn/futuremarket/spotprice.shtml#titlePos_0",
+      "description": "新浪财经-商品现货价格指数"
+    },
+    {
+      "interface": "index_yw",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "义乌小商品指数"
+      ],
+      "line": 3358,
+      "target_url": "https://www.ywindex.com/Home/Product/index/",
+      "description": "指定 symbol 的义乌小商品指数的近期历史数据"
+    },
+    {
+      "interface": "index_kq_fz",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "柯桥纺织品指数"
+      ],
+      "line": 3485,
+      "target_url": "http://www.kqindex.cn/flzs/jiage",
+      "description": "指定 symbol 的柯桥纺织品指数的所有历史数据"
+    },
+    {
+      "interface": "index_kq_fashion",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "柯桥时尚指数"
+      ],
+      "line": 3608,
+      "target_url": "http://ss.kqindex.cn:9559/rinder_web_kqsszs/index/index_page.do",
+      "description": "指定 symbol 的柯桥时尚指数的所有数据"
+    },
+    {
+      "interface": "index_sugar_msweet",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "中国食糖指数"
+      ],
+      "line": 3717,
+      "target_url": "http://www.msweet.com.cn/mtkj/sjzx13/index.html",
+      "description": "沐甜科技数据中心-中国食糖指数"
+    },
+    {
+      "interface": "index_inner_quote_sugar_msweet",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "配额内进口糖估算指数"
+      ],
+      "line": 3767,
+      "target_url": "http://www.msweet.com.cn/mtkj/sjzx13/index.html",
+      "description": "沐甜科技数据中心-配额内进口糖估算指数"
+    },
+    {
+      "interface": "index_outer_quote_sugar_msweet",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "配额外进口糖估算指数"
+      ],
+      "line": 3826,
+      "target_url": "http://www.msweet.com.cn/mtkj/sjzx13/index.html",
+      "description": "沐甜科技数据中心-配额外进口糖估算指数"
+    },
+    {
+      "interface": "index_eri",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "排污权指数"
+      ],
+      "line": 3878,
+      "target_url": "https://zs.zjpwq.net/",
+      "description": "浙江省排污权交易指数的数据"
+    },
+    {
+      "interface": "drewry_wci_index",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "集装箱指数"
+      ],
+      "line": 3928,
+      "target_url": "https://infogram.com/world-container-index-1h17493095xl4zj",
+      "description": "Drewry 集装箱指数的数据",
+      "limit": "返回指定 symbol 的数据"
+    },
+    {
+      "interface": "index_price_cflp",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "公路物流指数",
+        "中国公路物流运价指数"
+      ],
+      "line": 3980,
+      "target_url": "http://index.0256.cn/expx.htm",
+      "description": "获取指定 symbol 的中国公路物流运价指数的数据"
+    },
+    {
+      "interface": "index_volume_cflp",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "公路物流指数",
+        "中国公路物流运量指数"
+      ],
+      "line": 4030,
+      "target_url": "http://index.0256.cn/expx.htm",
+      "description": "指定 symbol 的中国公路物流运量指数的数据"
+    },
+    {
+      "interface": "stock_zh_index_hist_csindex",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "中证指数"
+      ],
+      "line": 4123,
+      "target_url": "https://www.csindex.com.cn/zh-CN/indices/index-detail/H30374#/indices/family/detail?indexCode=H30374",
+      "description": "中证指数日频率的数据",
+      "limit": "该接口返回指定 symbol 的 start_date 和 end_date 的指数日频率数据"
+    },
+    {
+      "interface": "index_pmi_com_cx",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "财新指数",
+        "综合 PMI"
+      ],
+      "line": 4191,
+      "target_url": "https://yun.ccxe.com.cn/indices/pmi",
+      "description": "财新数据-指数报告-财新中国 PMI-综合 PMI",
+      "limit": "该接口返回所有历史数据，该数据更新至 202507 截止；"
+    },
+    {
+      "interface": "index_pmi_man_cx",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "财新指数",
+        "制造业 PMI"
+      ],
+      "line": 4241,
+      "target_url": "https://yun.ccxe.com.cn/indices/pmi",
+      "description": "财新数据-指数报告-财新中国 PMI-制造业 PMI",
+      "limit": "该接口返回所有历史数据，该数据更新至 202507 截止；"
+    },
+    {
+      "interface": "index_pmi_ser_cx",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "财新指数",
+        "服务业 PMI"
+      ],
+      "line": 4291,
+      "target_url": "https://yun.ccxe.com.cn/indices/pmi",
+      "description": "财新数据-指数报告-财新中国 PMI-服务业 PMI",
+      "limit": "该接口返回所有历史数据，该数据更新至 202507 截止；"
+    },
+    {
+      "interface": "index_dei_cx",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "财新指数",
+        "数字经济指数"
+      ],
+      "line": 4341,
+      "target_url": "https://yun.ccxe.com.cn/indices/dei",
+      "description": "财新指数-数字经济指数",
+      "limit": "该接口返回所有历史数据"
+    },
+    {
+      "interface": "index_ii_cx",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "财新指数",
+        "产业指数"
+      ],
+      "line": 4391,
+      "target_url": "https://yun.ccxe.com.cn/indices/dei",
+      "description": "财新指数-产业指数",
+      "limit": "该接口返回所有历史数据"
+    },
+    {
+      "interface": "index_si_cx",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "财新指数",
+        "溢出指数"
+      ],
+      "line": 4441,
+      "target_url": "https://yun.ccxe.com.cn/indices/dei",
+      "description": "财新指数-溢出指数",
+      "limit": "该接口返回所有历史数据"
+    },
+    {
+      "interface": "index_fi_cx",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "财新指数",
+        "融合指数"
+      ],
+      "line": 4491,
+      "target_url": "https://yun.ccxe.com.cn/indices/dei",
+      "description": "财新指数-融合指数",
+      "limit": "该接口返回所有历史数据"
+    },
+    {
+      "interface": "index_bi_cx",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "财新指数",
+        "基础指数"
+      ],
+      "line": 4541,
+      "target_url": "https://yun.ccxe.com.cn/indices/dei",
+      "description": "财新指数-基础指数",
+      "limit": "该接口返回所有历史数据"
+    },
+    {
+      "interface": "index_nei_cx",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "财新指数",
+        "中国新经济指数"
+      ],
+      "line": 4591,
+      "target_url": "https://yun.ccxe.com.cn/indices/nei",
+      "description": "财新指数-中国新经济指数",
+      "limit": "该接口返回所有历史数据"
+    },
+    {
+      "interface": "index_li_cx",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "财新指数",
+        "劳动力投入指数"
+      ],
+      "line": 4641,
+      "target_url": "https://yun.ccxe.com.cn/indices/nei",
+      "description": "财新指数-劳动力投入指数",
+      "limit": "该接口返回所有历史数据"
+    },
+    {
+      "interface": "index_ci_cx",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "财新指数",
+        "资本投入指数"
+      ],
+      "line": 4691,
+      "target_url": "https://yun.ccxe.com.cn/indices/nei",
+      "description": "财新指数-资本投入指数",
+      "limit": "该接口返回所有历史数据"
+    },
+    {
+      "interface": "index_ti_cx",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "财新指数",
+        "科技投入指数"
+      ],
+      "line": 4741,
+      "target_url": "https://yun.ccxe.com.cn/indices/nei",
+      "description": "财新指数-科技投入指数",
+      "limit": "该接口返回所有历史数据"
+    },
+    {
+      "interface": "index_neaw_cx",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "财新指数",
+        "新经济行业入职平均工资水平"
+      ],
+      "line": 4791,
+      "target_url": "https://yun.ccxe.com.cn/indices/nei",
+      "description": "财新指数-新经济行业入职平均工资水平",
+      "limit": "该接口返回所有历史数据"
+    },
+    {
+      "interface": "index_awpr_cx",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "财新指数",
+        "新经济入职工资溢价水平"
+      ],
+      "line": 4841,
+      "target_url": "https://yun.ccxe.com.cn/indices/nei",
+      "description": "财新指数-新经济入职工资溢价水平",
+      "limit": "该接口返回所有历史数据"
+    },
+    {
+      "interface": "index_cci_cx",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "财新指数",
+        "大宗商品指数"
+      ],
+      "line": 4891,
+      "target_url": "https://yun.ccxe.com.cn/indices/nei",
+      "description": "财新指数-大宗商品指数",
+      "limit": "该接口返回所有历史数据"
+    },
+    {
+      "interface": "index_qli_cx",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "财新指数",
+        "高质量因子"
+      ],
+      "line": 4942,
+      "target_url": "https://yun.ccxe.com.cn/indices/qli",
+      "description": "财新指数-高质量因子",
+      "limit": "该接口返回所有历史数据"
+    },
+    {
+      "interface": "index_ai_cx",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "财新指数",
+        "AI策略指数"
+      ],
+      "line": 4993,
+      "target_url": "https://yun.ccxe.com.cn/indices/ai",
+      "description": "财新指数-AI策略指数",
+      "limit": "该接口返回所有历史数据"
+    },
+    {
+      "interface": "index_bei_cx",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "财新指数",
+        "基石经济指数"
+      ],
+      "line": 5044,
+      "target_url": "https://yun.ccxe.com.cn/indices/bei",
+      "description": "财新指数-基石经济指数",
+      "limit": "该接口返回所有历史数据"
+    },
+    {
+      "interface": "index_neei_cx",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "财新指数",
+        "新动能指数"
+      ],
+      "line": 5095,
+      "target_url": "https://yun.ccxe.com.cn/indices/neei",
+      "description": "财新指数-新动能指数",
+      "limit": "该接口返回所有历史数据"
+    },
+    {
+      "interface": "stock_zh_index_value_csindex",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "指数估值",
+        "指数估值-中证"
+      ],
+      "line": 5158,
+      "target_url": "https://www.csindex.com.cn/zh-CN/indices/index-detail/H30374#/indices/family/detail?indexCode=H30374",
+      "description": "中证指数-指数估值数据",
+      "limit": "该接口返回指定的指数的估值数据, 该接口只能返回近期的数据"
+    },
+    {
+      "interface": "index_realtime_fund_sw",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "申万宏源研究",
+        "基金指数实时行情"
+      ],
+      "line": 5227,
+      "target_url": "https://www.swsresearch.com/institute_sw/allIndex/releasedIndex",
+      "description": "申万宏源研究-申万指数-指数发布-基金指数-实时行情",
+      "limit": "该接口返回指定 symbol 的数据"
+    },
+    {
+      "interface": "index_hist_fund_sw",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "申万宏源研究",
+        "基金指数历史行情"
+      ],
+      "line": 5275,
+      "target_url": "https://www.swsresearch.com/institute_sw/allIndex/releasedIndex/fundDetail?code=807100",
+      "description": "申万宏源研究-申万指数-指数发布-基金指数-历史行情",
+      "limit": "该接口返回指定 symbol 的数据"
+    },
+    {
+      "interface": "index_realtime_sw",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "申万宏源研究",
+        "申万指数实时行情"
+      ],
+      "line": 5330,
+      "target_url": "https://www.swsresearch.com/institute_sw/allIndex/releasedIndex",
+      "description": "申万宏源研究-指数系列; 注意其中大类风格指数和金创指数的字段",
+      "limit": "该接口返回指定 symbol 的数据"
+    },
+    {
+      "interface": "index_hist_sw",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "申万宏源研究",
+        "申万指数历史行情"
+      ],
+      "line": 5385,
+      "target_url": "https://www.swsresearch.com//institute_sw/allIndex/releasedIndex/releasedetail?code=801002&name=申万中小",
+      "description": "申万宏源研究-指数发布-指数详情-指数历史数据",
+      "limit": "该接口返回指定 symbol 和 period 的数据"
+    },
+    {
+      "interface": "index_min_sw",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "申万宏源研究",
+        "申万指数分时行情"
+      ],
+      "line": 5442,
+      "target_url": "https://www.swsresearch.com//institute_sw/allIndex/releasedIndex/releasedetail?code=801001&name=申万中小",
+      "description": "申万宏源研究-指数发布-指数详情-指数分时数据",
+      "limit": "该接口返回指定 symbol 的数据"
+    },
+    {
+      "interface": "index_component_sw",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "申万宏源研究",
+        "申万指数成分股"
+      ],
+      "line": 5495,
+      "target_url": "https://www.swsresearch.com//institute_sw/allIndex/releasedIndex/releasedetail?code=801001&name=申万中小",
+      "description": "申万宏源研究-指数发布-指数详情-成分股",
+      "limit": "该接口返回指定 symbol 的数据"
+    },
+    {
+      "interface": "index_analysis_daily_sw",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "申万宏源研究",
+        "申万指数分析-日报表"
+      ],
+      "line": 5548,
+      "target_url": "https://www.swsresearch.com//institute_sw/allIndex/analysisIndex",
+      "description": "申万宏源研究-指数分析-日报表",
+      "limit": "该接口返回指定参数的数据"
+    },
+    {
+      "interface": "index_analysis_weekly_sw",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "申万宏源研究",
+        "申万指数分析-周报表"
+      ],
+      "line": 5610,
+      "target_url": "https://www.swsresearch.com//institute_sw/allIndex/analysisIndex",
+      "description": "申万宏源研究-指数分析-周报表",
+      "limit": "该接口返回指定参数的数据"
+    },
+    {
+      "interface": "index_analysis_monthly_sw",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "申万宏源研究",
+        "申万指数分析-月报表"
+      ],
+      "line": 5671,
+      "target_url": "https://www.swsresearch.com/institute_sw/allIndex/analysisIndex",
+      "description": "申万宏源研究-指数分析-月报表",
+      "limit": "该接口返回指定参数的数据"
+    },
+    {
+      "interface": "index_news_sentiment_scope",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 指数数据",
+        "市场情绪指数",
+        "A 股新闻情绪指数"
+      ],
+      "line": 5734,
+      "target_url": "https://www.chinascope.com/reasearch.html",
+      "description": "数库-A股新闻情绪指数",
+      "limit": "该接口返回近一年的 A 股新闻情绪指数数据"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "document": "energy",
+  "source_url": "https://akshare.akfamily.xyz/_sources/data/energy/energy.md.txt",
+  "sha256": "14937c818cf02665808ab75c47a0376028a671d74ab79cb1c09be7073816d966",
+  "interfaces": [
+    {
+      "interface": "energy_carbon_domestic",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 能源数据",
+        "碳排放",
+        "碳排放权-国内"
+      ],
+      "line": 7,
+      "target_url": "http://www.tanjiaoyi.com/",
+      "description": "碳交易网-行情信息",
+      "limit": "返回指定 symbol 的所有历史数据"
+    },
+    {
+      "interface": "energy_carbon_bj",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 能源数据",
+        "碳排放",
+        "碳排放权-北京"
+      ],
+      "line": 59,
+      "target_url": "https://www.bjets.com.cn/article/jyxx/",
+      "description": "北京市碳排放权电子交易平台-北京市碳排放权公开交易行情",
+      "limit": "全部历史数据"
+    },
+    {
+      "interface": "energy_carbon_sz",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 能源数据",
+        "碳排放",
+        "碳排放权-深圳"
+      ],
+      "line": 113,
+      "target_url": "http://www.cerx.cn/dailynewsCN/index.htm",
+      "description": "深圳碳排放交易所-国内碳情",
+      "limit": "全部历史数据"
+    },
+    {
+      "interface": "energy_carbon_eu",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 能源数据",
+        "碳排放",
+        "碳排放权-国际"
+      ],
+      "line": 169,
+      "target_url": "http://www.cerx.cn/dailynewsOuter/index.htm",
+      "description": "深圳碳排放交易所-国际碳情",
+      "limit": "返回从 2018-03-13 至 2020-04-29 的所有历史数据"
+    },
+    {
+      "interface": "energy_carbon_hb",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 能源数据",
+        "碳排放",
+        "碳排放权-湖北"
+      ],
+      "line": 225,
+      "target_url": "http://www.cerx.cn/dailynewsOuter/index.htm",
+      "description": "湖北碳排放权交易中心-碳排放权交易数据",
+      "limit": "返回从 2014-04-02 至今的所有历史数据"
+    },
+    {
+      "interface": "energy_carbon_gz",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 能源数据",
+        "碳排放",
+        "碳排放权-广州"
+      ],
+      "line": 278,
+      "target_url": "http://www.cnemission.com/article/hqxx/",
+      "description": "广州碳排放权交易中心-行情信息",
+      "limit": "该接口返回从 2013-12-19 至今的所有历史数据"
+    },
+    {
+      "interface": "energy_oil_hist",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 能源数据",
+        "中国油价",
+        "汽柴油历史调价信息"
+      ],
+      "line": 337,
+      "target_url": "https://data.eastmoney.com/cjsj/oil_default.html",
+      "description": "东方财富-数据中心-中国油价-汽柴油历史调价信息",
+      "limit": "单次返回中国油价的所有历史数据"
+    },
+    {
+      "interface": "energy_oil_detail",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 能源数据",
+        "中国油价",
+        "地区油价"
+      ],
+      "line": 390,
+      "target_url": "https://data.eastmoney.com/cjsj/oil_default.html",
+      "description": "东方财富-数据中心-中国油价-地区油价",
+      "limit": "返回指定调价日的全国各地区的油价的历史数据"
+    }
+  ]
+}

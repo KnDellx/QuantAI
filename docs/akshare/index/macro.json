@@ -1,0 +1,2779 @@
+{
+  "schema_version": 1,
+  "document": "macro",
+  "source_url": "https://akshare.akfamily.xyz/_sources/data/macro/macro.md.txt",
+  "sha256": "5ff036ad8fb702e06b47a4d95248f8b5062db30aac7beecab086f84b87e6231d",
+  "interfaces": [
+    {
+      "interface": "macro_cnbs",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "中国宏观杠杆率"
+      ],
+      "line": 7,
+      "target_url": "http://114.115.232.154:8080/",
+      "description": "中国国家金融与发展实验室-中国宏观杠杆率数据",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_qyspjg",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "国民经济运行状况",
+        "经济状况",
+        "企业商品价格指数"
+      ],
+      "line": 68,
+      "target_url": "http://data.eastmoney.com/cjsj/qyspjg.html",
+      "description": "东方财富-经济数据一览-中国-企业商品价格指数, 数据区间从 20050101-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_fdi",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "国民经济运行状况",
+        "经济状况",
+        "外商直接投资数据"
+      ],
+      "line": 128,
+      "target_url": "https://data.eastmoney.com/cjsj/fdi.html",
+      "description": "东方财富-经济数据一览-中国-外商直接投资数据, 数据区间从 200801-202307",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_lpr",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "国民经济运行状况",
+        "经济状况",
+        "LPR品种数据"
+      ],
+      "line": 182,
+      "target_url": "https://data.eastmoney.com/cjsj/globalRateLPR.html",
+      "description": "中国 LPR 品种数据, 数据区间从 19910421-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_urban_unemployment",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "国民经济运行状况",
+        "经济状况",
+        "城镇调查失业率"
+      ],
+      "line": 235,
+      "target_url": "https://data.stats.gov.cn/dg/website/page.html#/pc/national/monthData",
+      "description": "国家统计局-月度数据-城镇调查失业率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_shrzgm",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "国民经济运行状况",
+        "经济状况",
+        "社会融资规模增量统计"
+      ],
+      "line": 286,
+      "target_url": "http://data.mofcom.gov.cn/gnmy/shrzgm.shtml",
+      "description": "商务数据中心-国内贸易-社会融资规模增量统计, 数据区间从 201501-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_gdp_yearly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "国民经济运行状况",
+        "经济状况",
+        "中国 GDP 年率"
+      ],
+      "line": 342,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_chinese_gdp_yoy",
+      "description": "金十数据中心-中国 GDP 年率报告, 数据区间从 20110120-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_cpi_yearly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "国民经济运行状况",
+        "物价水平",
+        "中国 CPI 年率报告"
+      ],
+      "line": 441,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_chinese_cpi_yoy",
+      "description": "中国年度 CPI 数据, 数据区间从 19860201-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_cpi_monthly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "国民经济运行状况",
+        "物价水平",
+        "中国 CPI 月率报告"
+      ],
+      "line": 494,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_chinese_cpi_mom",
+      "description": "中国月度 CPI 数据, 数据区间从 19960201-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_ppi_yearly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "国民经济运行状况",
+        "物价水平",
+        "中国 PPI 年率报告"
+      ],
+      "line": 547,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_chinese_ppi_yoy",
+      "description": "中国年度 PPI 数据, 数据区间从 19950801-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_exports_yoy",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "贸易状况",
+        "以美元计算出口年率"
+      ],
+      "line": 602,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_chinese_exports_yoy",
+      "description": "中国以美元计算出口年率报告, 数据区间从 19820201-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_imports_yoy",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "贸易状况",
+        "以美元计算进口年率"
+      ],
+      "line": 655,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_chinese_imports_yoy",
+      "description": "中国以美元计算进口年率报告, 数据区间从 19960201-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_trade_balance",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "贸易状况",
+        "以美元计算贸易帐(亿美元)"
+      ],
+      "line": 708,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_chinese_trade_balance",
+      "description": "中国以美元计算贸易帐报告, 数据区间从19810201-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_gyzjz",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "产业指标",
+        "工业增加值增长"
+      ],
+      "line": 763,
+      "target_url": "https://data.eastmoney.com/cjsj/gyzjz.html",
+      "description": "东方财富-中国工业增加值增长, 数据区间从 2008 - 至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_industrial_production_yoy",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "产业指标",
+        "规模以上工业增加值年率"
+      ],
+      "line": 815,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_chinese_industrial_production_yoy",
+      "description": "中国规模以上工业增加值年率报告, 数据区间从 19900301-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_pmi_yearly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "产业指标",
+        "官方制造业 PMI"
+      ],
+      "line": 868,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_chinese_manufacturing_pmi",
+      "description": "中国年度PMI数据, 数据区间从 20050201-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_cx_pmi_yearly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "产业指标",
+        "财新制造业PMI终值"
+      ],
+      "line": 921,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_chinese_caixin_manufacturing_pmi",
+      "description": "中国年度财新 PMI 数据, 数据区间从 20120120-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_cx_services_pmi_yearly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "产业指标",
+        "财新服务业PMI"
+      ],
+      "line": 974,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_chinese_caixin_services_pmi",
+      "description": "中国财新服务业 PMI 报告, 数据区间从 20120405-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_non_man_pmi",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "产业指标",
+        "中国官方非制造业PMI"
+      ],
+      "line": 1027,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_chinese_non_manufacturing_pmi",
+      "description": "中国官方非制造业 PMI, 数据区间从 20160101-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_fx_reserves_yearly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "外汇储备(亿美元)"
+      ],
+      "line": 1082,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_chinese_fx_reserves",
+      "description": "中国年度外汇储备数据, 数据区间从 20140115-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_m2_yearly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "M2货币供应年率"
+      ],
+      "line": 1135,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_chinese_m2_money_supply_yoy",
+      "description": "中国年度 M2 数据, 数据区间从 19980201-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_new_house_price",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "新房价指数"
+      ],
+      "line": 1188,
+      "target_url": "http://data.eastmoney.com/cjsj/newhouse.html",
+      "description": "中国新房价指数月度数据, 数据区间从 201101-至今",
+      "limit": "单次返回指定城市的所有历史数据"
+    },
+    {
+      "interface": "macro_china_enterprise_boom_index",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "企业景气及企业家信心指数"
+      ],
+      "line": 1245,
+      "target_url": "http://data.eastmoney.com/cjsj/qyjqzs.html",
+      "description": "中国企业景气及企业家信心指数数据, 数据区间从 2005 一季度-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_national_tax_receipts",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "全国税收收入"
+      ],
+      "line": 1299,
+      "target_url": "http://data.eastmoney.com/cjsj/nationaltaxreceipts.aspx",
+      "description": "中国全国税收收入数据, 数据区间从 2005 一季度-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_bank_financing",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "银行理财产品发行数量"
+      ],
+      "line": 1350,
+      "target_url": "https://data.eastmoney.com/cjsj/hyzs_list_EMI01516267.html",
+      "description": "银行理财产品发行数量, 数据区间从 2000 一月-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_insurance_income",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "原保险保费收入"
+      ],
+      "line": 1405,
+      "target_url": "https://data.eastmoney.com/cjsj/hyzs_list_EMM00088870.html",
+      "description": "原保险保费收入, 数据区间从 200407-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_mobile_number",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "手机出货量"
+      ],
+      "line": 1460,
+      "target_url": "https://data.eastmoney.com/cjsj/hyzs_list_EMI00225823.html",
+      "description": "手机出货量, 数据区间从 201201-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_vegetable_basket",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "菜篮子产品批发价格指数"
+      ],
+      "line": 1515,
+      "target_url": "https://data.eastmoney.com/cjsj/hyzs_list_EMI00009275.html",
+      "description": "菜篮子产品批发价格指数, 数据区间从 20050927-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_agricultural_product",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "农产品批发价格总指数"
+      ],
+      "line": 1570,
+      "target_url": "https://data.eastmoney.com/cjsj/hyzs_list_EMI00009274.html",
+      "description": "农产品批发价格总指数, 数据区间从 20050927-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_agricultural_index",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "农副指数"
+      ],
+      "line": 1625,
+      "target_url": "https://data.eastmoney.com/cjsj/hyzs_list_EMI00662543.html",
+      "description": "农副指数数据, 数据区间从 20111205-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_energy_index",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "能源指数"
+      ],
+      "line": 1680,
+      "target_url": "https://data.eastmoney.com/cjsj/hyzs_list_EMI00662539.html",
+      "description": "能源指数数据, 数据区间从 20111205-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_commodity_price_index",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "大宗商品价格"
+      ],
+      "line": 1735,
+      "target_url": "https://data.eastmoney.com/cjsj/hyzs_list_EMI00662535.html",
+      "description": "大宗商品价格数据, 数据区间从 20111205-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_global_sox_index",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "费城半导体指数"
+      ],
+      "line": 1790,
+      "target_url": "https://data.eastmoney.com/cjsj/hyzs_list_EMI00055562.html",
+      "description": "费城半导体指数数据, 数据区间从 19940504-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_yw_electronic_index",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "义乌小商品指数-电子元器件"
+      ],
+      "line": 1845,
+      "target_url": "https://data.eastmoney.com/cjsj/hyzs_list_EMI00055551.html",
+      "description": "义乌小商品指数-电子元器件数据, 数据区间从 20060911-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_construction_index",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "建材指数"
+      ],
+      "line": 1900,
+      "target_url": "https://data.eastmoney.com/cjsj/hyzs_list_EMI00662541.html",
+      "description": "建材指数数据, 数据区间从 20111205-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_construction_price_index",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "建材价格指数"
+      ],
+      "line": 1956,
+      "target_url": "https://data.eastmoney.com/cjsj/hyzs_list_EMI00237146.html",
+      "description": "建材价格指数数据, 数据区间从 20100615-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_lpi_index",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "物流景气指数"
+      ],
+      "line": 2011,
+      "target_url": "https://data.eastmoney.com/cjsj/hyzs_list_EMI00352262.html",
+      "description": "物流景气指数数据, 数据区间从 20130701-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_bdti_index",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "原油运输指数"
+      ],
+      "line": 2066,
+      "target_url": "https://data.eastmoney.com/cjsj/hyzs_list_EMI00107668.html",
+      "description": "原油运输指数数据, 数据区间从 20011227-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_bsi_index",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "超灵便型船运价指数"
+      ],
+      "line": 2121,
+      "target_url": "https://data.eastmoney.com/cjsj/hyzs_list_EMI00107667.html",
+      "description": "超灵便型船运价指数数据, 数据区间从 20060103-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_shipping_bci",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "海岬型运费指数"
+      ],
+      "line": 2176,
+      "target_url": "https://data.eastmoney.com/cjsj/hyzs_list_EMI00107666.html",
+      "description": "海岬型运费指数, 数据区间从 19990430-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_shipping_bdi",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "波罗的海干散货指数"
+      ],
+      "line": 2231,
+      "target_url": "https://data.eastmoney.com/cjsj/hyzs_list_EMI00107664.html",
+      "description": "波罗的海干散货指数, 数据区间从 19881019-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_shipping_bpi",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "巴拿马型运费指数"
+      ],
+      "line": 2286,
+      "target_url": "https://data.eastmoney.com/cjsj/hyzs_list_EMI00107665.html",
+      "description": "巴拿马型运费指数, 数据区间从 19981231-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_shipping_bcti",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "成品油运输指数"
+      ],
+      "line": 2341,
+      "target_url": "https://data.eastmoney.com/cjsj/hyzs_list_EMI00107669.html",
+      "description": "成品油运输指数, 数据区间从 20011217-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_new_financial_credit",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "新增信贷数据"
+      ],
+      "line": 2396,
+      "target_url": "http://data.eastmoney.com/cjsj/xzxd.html",
+      "description": "中国新增信贷数据数据, 数据区间从 200801 至今, 月度数据",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_cpi",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "居民消费价格指数"
+      ],
+      "line": 2449,
+      "target_url": "http://data.eastmoney.com/cjsj/cpi.html",
+      "description": "中国居民消费价格指数, 数据区间从 200801 至今, 月度数据",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_gdp",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "国内生产总值"
+      ],
+      "line": 2509,
+      "target_url": "http://data.eastmoney.com/cjsj/gdp.html",
+      "description": "中国国内生产总值, 数据区间从 200601 至今, 月度数据",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_ppi",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "工业品出厂价格指数"
+      ],
+      "line": 2565,
+      "target_url": "http://data.eastmoney.com/cjsj/ppi.html",
+      "description": "工业品出厂价格指数, 数据区间从 200601 至今, 月度数据",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_pmi",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "采购经理人指数"
+      ],
+      "line": 2616,
+      "target_url": "http://data.eastmoney.com/cjsj/pmi.html",
+      "description": "采购经理人指数, 数据区间从 200801 至今, 月度数据",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_gdzctz",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "中国城镇固定资产投资"
+      ],
+      "line": 2668,
+      "target_url": "http://data.eastmoney.com/cjsj/gdzctz.html",
+      "description": "中国城镇固定资产投资, 数据区间从 200802 至今, 月度数据",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_hgjck",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "海关进出口增减情况"
+      ],
+      "line": 2720,
+      "target_url": "https://data.eastmoney.com/cjsj/hgjck.html",
+      "description": "中国海关进出口增减情况一览表, 数据区间从 200801 至今, 月度数据",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_czsr",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "财政收入"
+      ],
+      "line": 2778,
+      "target_url": "http://data.eastmoney.com/cjsj/czsr.html",
+      "description": "中国财政收入, 数据区间从 200801 至今, 月度数据",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_whxd",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "外汇贷款数据"
+      ],
+      "line": 2832,
+      "target_url": "http://data.eastmoney.com/cjsj/whxd.html",
+      "description": "外汇贷款数据, 数据区间从 200802 至今, 月度数据",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_wbck",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "本外币存款"
+      ],
+      "line": 2885,
+      "target_url": "http://data.eastmoney.com/cjsj/wbck.html",
+      "description": "本外币存款, 数据区间从 200802 至今, 月度数据",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_bond_public",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "新债发行"
+      ],
+      "line": 2937,
+      "target_url": "https://www.chinamoney.com.cn/chinese/xzjfx/",
+      "description": "中国外汇交易中心暨全国银行间同业拆借中心-债券信息披露-新债发行; 近期债券发行数据",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_xfzxx",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "消费者信心指数"
+      ],
+      "line": 2993,
+      "target_url": "https://data.eastmoney.com/cjsj/xfzxx.html",
+      "description": "东方财富网-消费者信心指数",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_reserve_requirement_ratio",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "存款准备金率"
+      ],
+      "line": 3050,
+      "target_url": "https://data.eastmoney.com/cjsj/ckzbj.html",
+      "description": "国家统计局-存款准备金率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_consumer_goods_retail",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "社会消费品零售总额"
+      ],
+      "line": 3150,
+      "target_url": "http://data.eastmoney.com/cjsj/xfp.html",
+      "description": "东方财富-经济数据-社会消费品零售总额",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_society_electricity",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "全社会用电分类情况表"
+      ],
+      "line": 3203,
+      "target_url": "http://finance.sina.com.cn/mac/#industry-6-0-31-1",
+      "description": "国家统计局-全社会用电分类情况表",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_society_traffic_volume",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "全社会客货运输量"
+      ],
+      "line": 3268,
+      "target_url": "http://finance.sina.com.cn/mac/#industry-10-0-31-1",
+      "description": "国家统计局-全社会客货运输量-非累计",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_postal_telecommunicational",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "邮电业务基本情况"
+      ],
+      "line": 3332,
+      "target_url": "http://finance.sina.com.cn/mac/#industry-11-0-31-1",
+      "description": "国家统计局-邮电业务基本情况-非累计",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_international_tourism_fx",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "国际旅游外汇收入构成"
+      ],
+      "line": 3421,
+      "target_url": "http://finance.sina.com.cn/mac/#industry-15-0-31-3",
+      "description": "国家统计局-国际旅游外汇收入构成",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_passenger_load_factor",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "民航客座率及载运率"
+      ],
+      "line": 3473,
+      "target_url": "http://finance.sina.com.cn/mac/#industry-20-0-31-1",
+      "description": "国家统计局-民航客座率及载运率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_freight_index",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "航贸运价指数"
+      ],
+      "line": 3524,
+      "target_url": "http://finance.sina.com.cn/mac/#industry-22-0-31-2",
+      "description": "新浪财经-中国宏观经济数据-航贸运价指数",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_central_bank_balance",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "央行货币当局资产负债"
+      ],
+      "line": 3579,
+      "target_url": "http://finance.sina.com.cn/mac/#fininfo-8-0-31-2",
+      "description": "新浪财经-中国宏观经济数据-央行货币当局资产负债",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_insurance",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "保险业经营情况"
+      ],
+      "line": 3655,
+      "target_url": "http://finance.sina.com.cn/mac/#fininfo-19-0-31-3",
+      "description": "新浪财经-中国宏观经济数据-保险业经营情况",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_supply_of_money",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "货币供应量"
+      ],
+      "line": 3724,
+      "target_url": "http://finance.sina.com.cn/mac/#fininfo-1-0-31-1",
+      "description": "新浪财经-中国宏观经济数据-货币供应量",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_swap_rate",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "FR007利率互换曲线历史数据"
+      ],
+      "line": 3788,
+      "target_url": "https://www.chinamoney.com.cn/chinese/bkcurvfxhis/?cfgItemType=72&curveType=FR007",
+      "description": "国家统计局-FR007利率互换曲线历史数据",
+      "limit": "单次返回所有历史数据, 该接口只能获取近一年的数据的数据，其中每次只能获取一个月的数据"
+    },
+    {
+      "interface": "macro_china_foreign_exchange_gold",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "央行黄金和外汇储备"
+      ],
+      "line": 3852,
+      "target_url": "http://finance.sina.com.cn/mac/#fininfo-5-0-31-2",
+      "description": "国家统计局-央行黄金和外汇储备, 比东财接口数据时间长",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_retail_price_index",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "商品零售价格指数"
+      ],
+      "line": 3903,
+      "target_url": "http://finance.sina.com.cn/mac/#price-12-0-31-1",
+      "description": "国家统计局-商品零售价格指数",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_real_estate",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "国房景气指数"
+      ],
+      "line": 3953,
+      "target_url": "http://data.eastmoney.com/cjsj/hyzs_list_EMM00121987.html",
+      "description": "国家统计局-国房景气指数",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_fx_gold",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "外汇和黄金储备"
+      ],
+      "line": 4008,
+      "target_url": "http://data.eastmoney.com/cjsj/hjwh.html",
+      "description": "中国外汇和黄金储备, 数据区间从 200801 至今, 月度数据",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_money_supply",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "中国货币供应量"
+      ],
+      "line": 4062,
+      "target_url": "http://data.eastmoney.com/cjsj/hbgyl.html",
+      "description": "东方财富-经济数据-中国宏观-中国货币供应量; 数据区间从 200801 至今, 月度数据",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_stock_market_cap",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "全国股票交易统计表"
+      ],
+      "line": 4119,
+      "target_url": "http://data.eastmoney.com/cjsj/gpjytj.html",
+      "description": "全国股票交易统计表, 数据区间从 200801 至今, 月度数据",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_shibor_all",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "上海银行业同业拆借报告"
+      ],
+      "line": 4179,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_shibor",
+      "description": "上海银行业同业拆借报告, 数据区间从 20170317-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_hk_market_info",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融指标",
+        "人民币香港银行同业拆息"
+      ],
+      "line": 4248,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_hk_market_info",
+      "description": "香港同业拆借报告, 数据区间从 20170320-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_daily_energy",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "其他指标",
+        "中国日度沿海六大电库存"
+      ],
+      "line": 4319,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_qihuo_energy_report",
+      "description": "中国日度沿海六大电库存数据, 数据区间从20160101-至今, 不再更新, 只能获得历史数据",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_rmb",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "其他指标",
+        "人民币汇率中间价报告"
+      ],
+      "line": 4371,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_rmb_data",
+      "description": "中国人民币汇率中间价报告, 数据区间从 20170103-20210513",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_market_margin_sz",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "其他指标",
+        "深圳融资融券报告"
+      ],
+      "line": 4469,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_market_margin_sz",
+      "description": "深圳融资融券报告, 数据区间从 20100331-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_market_margin_sh",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "其他指标",
+        "上海融资融券报告"
+      ],
+      "line": 4524,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_market_margin_sse",
+      "description": "上海融资融券报告, 数据区间从 20100331-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_au_report",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "其他指标",
+        "上海黄金交易所报告"
+      ],
+      "line": 4579,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_sge_report",
+      "description": "上海黄金交易所报告, 数据区间从 20140905-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_nbs_nation",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "国家统计局通用接口",
+        "国家统计局全国数据"
+      ],
+      "line": 4642,
+      "target_url": "https://data.stats.gov.cn/easyquery.htm",
+      "description": "国家统计局全国数据通用接口，包括月度数据、季度数据、年度数据，具体指标见数据官网。",
+      "limit": "根据参数返回指定数据"
+    },
+    {
+      "interface": "macro_china_nbs_region",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "国家统计局通用接口",
+        "国家统计局地区数据"
+      ],
+      "line": 4686,
+      "target_url": "https://data.stats.gov.cn/easyquery.htm",
+      "description": "国家统计局地区数据通用接口，包括分省月度数据、分省季度数据、分省年度数据、主要城市月度价格、主要城市年度数据、港澳台月度数据、港澳台年度数据，具体指标见数据官网。",
+      "limit": "根据参数返回指定数据"
+    },
+    {
+      "interface": "macro_stock_finance",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融市场",
+        "股票筹资"
+      ],
+      "line": 4743,
+      "target_url": "https://data.10jqka.com.cn/macro/finance/",
+      "description": "同花顺-数据中心-宏观数据-股票筹资",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_rmb_loan",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融市场",
+        "新增人民币贷款"
+      ],
+      "line": 4814,
+      "target_url": "https://data.10jqka.com.cn/macro/loan/",
+      "description": "同花顺-数据中心-宏观数据-新增人民币贷款",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_rmb_deposit",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国宏观",
+        "金融市场",
+        "人民币存款余额"
+      ],
+      "line": 4886,
+      "target_url": "https://data.10jqka.com.cn/macro/rmb/",
+      "description": "同花顺-数据中心-宏观数据-人民币存款余额",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_hk_cpi",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国香港宏观",
+        "消费者物价指数"
+      ],
+      "line": 4968,
+      "target_url": "https://data.eastmoney.com/cjsj/foreign_8_0.html",
+      "description": "东方财富-经济数据一览-中国香港-消费者物价指数",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_hk_cpi_ratio",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国香港宏观",
+        "消费者物价指数年率"
+      ],
+      "line": 5020,
+      "target_url": "https://data.eastmoney.com/cjsj/foreign_8_1.html",
+      "description": "东方财富-经济数据一览-中国香港-消费者物价指数年率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_hk_rate_of_unemployment",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国香港宏观",
+        "失业率"
+      ],
+      "line": 5072,
+      "target_url": "https://data.eastmoney.com/cjsj/foreign_8_2.html",
+      "description": "东方财富-经济数据一览-中国香港-失业率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_hk_gbp",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国香港宏观",
+        "GDP"
+      ],
+      "line": 5124,
+      "target_url": "https://data.eastmoney.com/cjsj/foreign_8_3.html",
+      "description": "东方财富-经济数据一览-中国香港-香港 GDP",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_hk_gbp_ratio",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国香港宏观",
+        "GDP 同比"
+      ],
+      "line": 5175,
+      "target_url": "https://data.eastmoney.com/cjsj/foreign_8_4.html",
+      "description": "东方财富-经济数据一览-中国香港-香港 GDP 同比",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_hk_building_volume",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国香港宏观",
+        "香港楼宇买卖合约数量"
+      ],
+      "line": 5227,
+      "target_url": "https://data.eastmoney.com/cjsj/foreign_8_5.html",
+      "description": "东方财富-经济数据一览-中国香港-香港楼宇买卖合约数量",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_hk_building_amount",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国香港宏观",
+        "香港楼宇买卖合约成交金额"
+      ],
+      "line": 5279,
+      "target_url": "https://data.eastmoney.com/cjsj/foreign_8_6.html",
+      "description": "东方财富-经济数据一览-中国香港-香港楼宇买卖合约成交金额",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_hk_trade_diff_ratio",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国香港宏观",
+        "香港商品贸易差额年率"
+      ],
+      "line": 5331,
+      "target_url": "https://data.eastmoney.com/cjsj/foreign_8_7.html",
+      "description": "东方财富-经济数据一览-中国香港-香港商品贸易差额年率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_china_hk_ppi",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "中国香港宏观",
+        "香港制造业 PPI 年率"
+      ],
+      "line": 5383,
+      "target_url": "https://data.eastmoney.com/cjsj/foreign_8_8.html",
+      "description": "东方财富-经济数据一览-中国香港-香港制造业PPI年率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_gdp_monthly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "经济状况",
+        "美国GDP"
+      ],
+      "line": 5439,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_gdp",
+      "description": "美国国内生产总值(GDP)报告, 数据区间从 20080228-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_cpi_monthly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "物价水平",
+        "美国CPI月率报告"
+      ],
+      "line": 5494,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_cpi",
+      "description": "美国 CPI 月率报告, 数据区间从 19700101-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_cpi_yoy",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "物价水平",
+        "美国CPI年率报告"
+      ],
+      "line": 5547,
+      "target_url": "https://data.eastmoney.com/cjsj/foreign_0_12.html",
+      "description": "东方财富-经济数据一览-美国-CPI年率, 数据区间从2008-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_core_cpi_monthly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "物价水平",
+        "美国核心CPI月率报告"
+      ],
+      "line": 5599,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_core_cpi",
+      "description": "美国核心 CPI 月率报告, 数据区间从 19700101-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_personal_spending",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "物价水平",
+        "美国个人支出月率报告"
+      ],
+      "line": 5652,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_personal_spending",
+      "description": "美国个人支出月率报告, 数据区间从 19700101-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_retail_sales",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "物价水平",
+        "美国零售销售月率报告"
+      ],
+      "line": 5705,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_retail_sales",
+      "description": "美国零售销售月率报告, 数据区间从 19920301-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_import_price",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "物价水平",
+        "美国进口物价指数报告"
+      ],
+      "line": 5758,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_import_price",
+      "description": "美国进口物价指数报告, 数据区间从 19890201-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_export_price",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "物价水平",
+        "美国出口价格指数报告"
+      ],
+      "line": 5811,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_export_price",
+      "description": "美国出口价格指数报告, 数据区间从 19890201-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_lmci",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "劳动力市场",
+        "LMCI"
+      ],
+      "line": 5866,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_lmci",
+      "description": "美联储劳动力市场状况指数报告, 数据区间从 20141006-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_unemployment_rate",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "劳动力市场",
+        "失业率",
+        "美国失业率报告"
+      ],
+      "line": 5943,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_unemployment_rate",
+      "description": "美国失业率报告, 数据区间从 19700101-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_job_cuts",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "劳动力市场",
+        "失业率",
+        "美国挑战者企业裁员人数报告"
+      ],
+      "line": 5996,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_job_cuts",
+      "description": "美国挑战者企业裁员人数报告, 数据区间从 19940201-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_non_farm",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "劳动力市场",
+        "就业人口",
+        "美国非农就业人数报告"
+      ],
+      "line": 6051,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_nonfarm_payrolls",
+      "description": "美国非农就业人数报告, 数据区间从 19700102-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_adp_employment",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "劳动力市场",
+        "就业人口",
+        "美国ADP就业人数报告"
+      ],
+      "line": 6104,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_adp_nonfarm_employment",
+      "description": "美国 ADP 就业人数报告, 数据区间从 20010601-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_core_pce_price",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "劳动力市场",
+        "消费者收入与支出",
+        "美国核心PCE物价指数年率报告"
+      ],
+      "line": 6159,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_core_pce_price",
+      "description": "美国核心 PCE 物价指数年率报告, 数据区间从 19700101-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_real_consumer_spending",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "劳动力市场",
+        "消费者收入与支出",
+        "美国实际个人消费支出季率初值报告"
+      ],
+      "line": 6212,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_real_consumer_spending",
+      "description": "美国实际个人消费支出季率初值报告, 数据区间从 20131107-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_trade_balance",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "贸易状况",
+        "美国贸易帐报告"
+      ],
+      "line": 6267,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_trade_balance",
+      "description": "美国贸易帐报告, 数据区间从 19700101-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_current_account",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "贸易状况",
+        "美国经常帐报告"
+      ],
+      "line": 6320,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_current_account",
+      "description": "美国经常帐报告, 数据区间从 20080317-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_rig_count",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "产业指标",
+        "制造业",
+        "贝克休斯钻井报告"
+      ],
+      "line": 6377,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_rig_count_summary",
+      "description": "贝克休斯钻井报告, 数据区间从 19870717-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_ppi",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "产业指标",
+        "制造业",
+        "美国生产者物价指数(PPI)报告"
+      ],
+      "line": 6434,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_ppi",
+      "description": "美国生产者物价指数(PPI)报告, 数据区间从 20080226-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_core_ppi",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "产业指标",
+        "制造业",
+        "美国核心生产者物价指数(PPI)报告"
+      ],
+      "line": 6487,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_core_ppi",
+      "description": "美国核心生产者物价指数(PPI)报告, 数据区间从 20080318-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_api_crude_stock",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "产业指标",
+        "制造业",
+        "美国 API 原油库存报告"
+      ],
+      "line": 6540,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_api_crude_stock",
+      "description": "美国 API 原油库存报告, 数据区间从 20120328-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_pmi",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "产业指标",
+        "制造业",
+        "美国Markit制造业PMI初值报告"
+      ],
+      "line": 6593,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_pmi",
+      "description": "美国 Markit 制造业 PMI 初值报告, 数据区间从 20120601-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_ism_pmi",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "产业指标",
+        "制造业",
+        "美国ISM制造业PMI报告"
+      ],
+      "line": 6646,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_ism_pmi",
+      "description": "美国 ISM 制造业 PMI 报告, 数据区间从 19700101-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_industrial_production",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "产业指标",
+        "工业",
+        "美国工业产出月率报告"
+      ],
+      "line": 6701,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_industrial_production",
+      "description": "美国工业产出月率报告, 数据区间从 19700101-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_durable_goods_orders",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "产业指标",
+        "工业",
+        "美国耐用品订单月率报告"
+      ],
+      "line": 6754,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_durable_goods_orders",
+      "description": "美国耐用品订单月率报告, 数据区间从 20080227-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_factory_orders",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "产业指标",
+        "工业",
+        "美国工厂订单月率报告"
+      ],
+      "line": 6807,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_factory_orders",
+      "description": "美国工厂订单月率报告, 数据区间从 19920401-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_services_pmi",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "产业指标",
+        "服务业",
+        "美国Markit服务业PMI初值报告"
+      ],
+      "line": 6862,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_services_pmi",
+      "description": "美国Markit服务业PMI初值报告, 数据区间从 20120701-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_business_inventories",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "产业指标",
+        "服务业",
+        "美国商业库存月率报告"
+      ],
+      "line": 6915,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_business_inventories",
+      "description": "美国商业库存月率报告, 数据区间从 19920301-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_ism_non_pmi",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "产业指标",
+        "服务业",
+        "美国ISM非制造业PMI报告"
+      ],
+      "line": 6968,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_ism_non_pmi",
+      "description": "美国 ISM 非制造业 PMI 报告, 数据区间从 19970801-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_nahb_house_market_index",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "产业指标",
+        "房地产",
+        "美国NAHB房产市场指数报告"
+      ],
+      "line": 7023,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_nahb_house_market_index",
+      "description": "美国 NAHB 房产市场指数报告, 数据区间从 19850201-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_house_starts",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "产业指标",
+        "房地产",
+        "美国新屋开工总数年化报告"
+      ],
+      "line": 7076,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_house_starts",
+      "description": "美国新屋开工总数年化报告, 数据区间从 19700101-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_new_home_sales",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "产业指标",
+        "房地产",
+        "美国新屋销售总数年化报告"
+      ],
+      "line": 7129,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_new_home_sales",
+      "description": "美国新屋销售总数年化报告, 数据区间从 19700101-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_building_permits",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "产业指标",
+        "房地产",
+        "美国营建许可总数报告"
+      ],
+      "line": 7182,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_building_permits",
+      "description": "美国营建许可总数报告, 数据区间从 20080220-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_exist_home_sales",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "产业指标",
+        "房地产",
+        "美国成屋销售总数年化报告"
+      ],
+      "line": 7235,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_exist_home_sales",
+      "description": "美国成屋销售总数年化报告, 数据区间从 19700101-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_house_price_index",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "产业指标",
+        "房地产",
+        "美国FHFA房价指数月率报告"
+      ],
+      "line": 7288,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_house_price_index",
+      "description": "美国 FHFA 房价指数月率报告, 数据区间从 19910301-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_spcs20",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "产业指标",
+        "房地产",
+        "美国S&P/CS20座大城市房价指数年率报告"
+      ],
+      "line": 7341,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_spcs20",
+      "description": "美国S&P/CS20座大城市房价指数年率报告, 数据区间从 20010201-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_pending_home_sales",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "产业指标",
+        "房地产",
+        "美国成屋签约销售指数月率报告"
+      ],
+      "line": 7394,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_usa_pending_home_sales",
+      "description": "美国成屋签约销售指数月率报告, 数据区间从 20010301-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_phs",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "领先指标",
+        "未决房屋销售月率"
+      ],
+      "line": 7449,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_0_5.html",
+      "description": "东方财富-经济数据一览-美国-未决房屋销售月率, 数据区间从 20080201-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_cb_consumer_confidence",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "领先指标",
+        "美国谘商会消费者信心指数报告"
+      ],
+      "line": 7500,
+      "target_url": "https://cdn.jin10.com/dc/reports/dc_usa_cb_consumer_confidence_all.js?v=1578576859",
+      "description": "美国谘商会消费者信心指数报告, 数据区间从 19700101-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_nfib_small_business",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "领先指标",
+        "美国NFIB小型企业信心指数报告"
+      ],
+      "line": 7553,
+      "target_url": "https://cdn.jin10.com/dc/reports/dc_usa_nfib_small_business_all.js?v=1578576631",
+      "description": "美国NFIB小型企业信心指数报告, 数据区间从 19750201-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_michigan_consumer_sentiment",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "领先指标",
+        "美国密歇根大学消费者信心指数初值报告"
+      ],
+      "line": 7606,
+      "target_url": "https://cdn.jin10.com/dc/reports/dc_usa_michigan_consumer_sentiment_all.js?v=1578576228",
+      "description": "美国密歇根大学消费者信心指数初值报告, 数据区间从 19700301-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_eia_crude_rate",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "其他",
+        "美国EIA原油库存报告"
+      ],
+      "line": 7661,
+      "target_url": "https://cdn.jin10.com/dc/reports/dc_usa_michigan_consumer_sentiment_all.js?v=1578576228",
+      "description": "美国EIA原油库存报告, 数据区间从 19950801-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_initial_jobless",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "其他",
+        "美国初请失业金人数报告"
+      ],
+      "line": 7714,
+      "target_url": "https://cdn.jin10.com/dc/reports/dc_usa_michigan_consumer_sentiment_all.js?v=1578576228",
+      "description": "美国初请失业金人数报告, 数据区间从 19700101-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_crude_inner",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "美国宏观",
+        "其他",
+        "美国原油产量报告"
+      ],
+      "line": 7767,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_eia_crude_oil_produce",
+      "description": "美国原油产量报告, 数据区间从 19830107-至今, 每周三公布(美国节假日除外), 美国能源信息署(EIA)",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_euro_gdp_yoy",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "欧元区宏观",
+        "国民经济运行状况",
+        "经济状况",
+        "欧元区季度GDP年率报告"
+      ],
+      "line": 7833,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_eurozone_gdp_yoy",
+      "description": "欧元区季度 GDP 年率报告, 数据区间从 20131114-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_euro_cpi_mom",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "欧元区宏观",
+        "国民经济运行状况",
+        "物价水平",
+        "欧元区CPI月率报告"
+      ],
+      "line": 7887,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_eurozone_cpi_mom",
+      "description": "欧元区 CPI 月率报告, 数据区间从 19900301-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_euro_cpi_yoy",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "欧元区宏观",
+        "国民经济运行状况",
+        "物价水平",
+        "欧元区CPI年率报告"
+      ],
+      "line": 7939,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_eurozone_cpi_yoy",
+      "description": "欧元区 CPI 年率报告, 数据区间从 19910201-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_euro_ppi_mom",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "欧元区宏观",
+        "国民经济运行状况",
+        "物价水平",
+        "欧元区PPI月率报告"
+      ],
+      "line": 7991,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_eurozone_ppi_mom",
+      "description": "欧元区 PPI 月率报告, 数据区间从 19810301-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_euro_retail_sales_mom",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "欧元区宏观",
+        "国民经济运行状况",
+        "物价水平",
+        "欧元区零售销售月率报告"
+      ],
+      "line": 8043,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_eurozone_retail_sales_mom",
+      "description": "欧元区零售销售月率报告, 数据区间从 20000301-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_euro_employment_change_qoq",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "欧元区宏观",
+        "国民经济运行状况",
+        "劳动力市场",
+        "欧元区季调后就业人数季率报告"
+      ],
+      "line": 8097,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_eurozone_employment_change_qoq",
+      "description": "欧元区季调后就业人数季率报告, 数据区间从 20083017-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_euro_unemployment_rate_mom",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "欧元区宏观",
+        "国民经济运行状况",
+        "劳动力市场",
+        "欧元区失业率报告"
+      ],
+      "line": 8149,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_eurozone_unemployment_rate_mom",
+      "description": "欧元区失业率报告, 数据区间从 19980501-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_euro_trade_balance",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "欧元区宏观",
+        "贸易状况",
+        "欧元区未季调贸易帐报告"
+      ],
+      "line": 8203,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_eurozone_trade_balance_mom",
+      "description": "欧元区未季调贸易帐报告, 数据区间从 19990201-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_euro_current_account_mom",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "欧元区宏观",
+        "贸易状况",
+        "欧元区经常帐报告"
+      ],
+      "line": 8255,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_eurozone_current_account_mom",
+      "description": "欧元区经常帐报告, 数据区间从 20080221-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_euro_industrial_production_mom",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "欧元区宏观",
+        "产业指标",
+        "欧元区工业产出月率报告"
+      ],
+      "line": 8309,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_eurozone_industrial_production_mom",
+      "description": "欧元区工业产出月率报告, 数据区间从 19910301-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_euro_manufacturing_pmi",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "欧元区宏观",
+        "产业指标",
+        "欧元区制造业PMI初值报告"
+      ],
+      "line": 8361,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_eurozone_manufacturing_pmi",
+      "description": "欧元区制造业 PMI 初值报告, 数据区间从 20080222-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_euro_services_pmi",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "欧元区宏观",
+        "产业指标",
+        "欧元区服务业PMI终值报告"
+      ],
+      "line": 8413,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_eurozone_services_pmi",
+      "description": "欧元区服务业 PMI 终值报告, 数据区间从 20080222-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_euro_zew_economic_sentiment",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "欧元区宏观",
+        "领先指标",
+        "欧元区ZEW经济景气指数报告"
+      ],
+      "line": 8467,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_eurozone_zew_economic_sentiment",
+      "description": "欧元区 ZEW 经济景气指数报告, 数据区间从 20080212-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_euro_sentix_investor_confidence",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "欧元区宏观",
+        "领先指标",
+        "欧元区Sentix投资者信心指数报告"
+      ],
+      "line": 8519,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_eurozone_sentix_investor_confidence",
+      "description": "欧元区 Sentix 投资者信心指数报告, 数据区间从 20020801-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_germany_ifo",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "德国宏观",
+        "IFO商业景气指数"
+      ],
+      "line": 8573,
+      "target_url": "https://data.eastmoney.com/cjsj/foreign_1_0.html",
+      "description": "东方财富-数据中心-经济数据一览-IFO商业景气指数",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_germany_cpi_monthly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "德国宏观",
+        "消费者物价指数月率终值"
+      ],
+      "line": 8624,
+      "target_url": "https://data.eastmoney.com/cjsj/foreign_1_1.html",
+      "description": "东方财富-数据中心-经济数据一览-德国-消费者物价指数月率终值",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_germany_cpi_yearly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "德国宏观",
+        "消费者物价指数年率终值"
+      ],
+      "line": 8675,
+      "target_url": "https://data.eastmoney.com/cjsj/foreign_1_2.html",
+      "description": "东方财富-数据中心-经济数据一览-德国-消费者物价指数年率终值",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_germany_trade_adjusted",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "德国宏观",
+        "贸易帐-季调后"
+      ],
+      "line": 8726,
+      "target_url": "https://data.eastmoney.com/cjsj/foreign_1_3.html",
+      "description": "东方财富-数据中心-经济数据一览-德国-贸易帐(季调后)",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_germany_gdp",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "德国宏观",
+        "GDP"
+      ],
+      "line": 8777,
+      "target_url": "https://data.eastmoney.com/cjsj/foreign_1_4.html",
+      "description": "东方财富-数据中心-经济数据一览-德国-GDP",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_germany_retail_sale_monthly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "德国宏观",
+        "实际零售销售月率"
+      ],
+      "line": 8875,
+      "target_url": "https://data.eastmoney.com/cjsj/foreign_1_5.html",
+      "description": "东方财富-数据中心-经济数据一览-德国-实际零售销售月率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_germany_retail_sale_yearly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "德国宏观",
+        "实际零售销售年率"
+      ],
+      "line": 8926,
+      "target_url": "https://data.eastmoney.com/cjsj/foreign_1_6.html",
+      "description": "东方财富-数据中心-经济数据一览-德国-实际零售销售年率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_germany_zew",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "德国宏观",
+        "ZEW 经济景气指数"
+      ],
+      "line": 8981,
+      "target_url": "https://data.eastmoney.com/cjsj/foreign_1_7.html",
+      "description": "东方财富-数据中心-经济数据一览-德国-ZEW 经济景气指数",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_swiss_svme",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "瑞士宏观",
+        "SVME 采购经理人指数"
+      ],
+      "line": 9034,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_2_0.html",
+      "description": "东方财富-经济数据-瑞士-SVME采购经理人指数",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_swiss_trade",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "瑞士宏观",
+        "贸易帐"
+      ],
+      "line": 9085,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_2_1.html",
+      "description": "东方财富-经济数据-瑞士-贸易帐",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_swiss_cpi_yearly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "瑞士宏观",
+        "消费者物价指数年率"
+      ],
+      "line": 9185,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_2_2.html",
+      "description": "东方财富-经济数据-瑞士-消费者物价指数年率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_swiss_gdp_quarterly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "瑞士宏观",
+        "GDP 季率"
+      ],
+      "line": 9240,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_2_3.html",
+      "description": "东方财富-经济数据-瑞士-GDP 季率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_swiss_gbd_yearly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "瑞士宏观",
+        "GDP 年率"
+      ],
+      "line": 9339,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_2_4.html",
+      "description": "东方财富-经济数据-瑞士-GDP 年率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_swiss_gbd_bank_rate",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "瑞士宏观",
+        "央行公布利率决议"
+      ],
+      "line": 9394,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_2_5.html",
+      "description": "东方财富-经济数据-瑞士-央行公布利率决议",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_japan_bank_rate",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "日本宏观",
+        "央行公布利率决议"
+      ],
+      "line": 9496,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_3_0.html",
+      "description": "东方财富-经济数据-日本-央行公布利率决议",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_japan_cpi_yearly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "日本宏观",
+        "全国消费者物价指数年率"
+      ],
+      "line": 9547,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_3_1.html",
+      "description": "东方财富-经济数据-日本-全国消费者物价指数年率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_japan_core_cpi_yearly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "日本宏观",
+        "全国核心消费者物价指数年率"
+      ],
+      "line": 9598,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_2_2.html",
+      "description": "东方财富-经济数据-日本-全国核心消费者物价指数年率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_japan_unemployment_rate",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "日本宏观",
+        "失业率"
+      ],
+      "line": 9649,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_2_3.html",
+      "description": "东方财富-经济数据-日本-失业率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_japan_head_indicator",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "日本宏观",
+        "领先指标终值"
+      ],
+      "line": 9700,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_3_4.html",
+      "description": "东方财富-经济数据-日本-领先指标终值",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_uk_halifax_monthly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "英国宏观",
+        "Halifax 房价指数月率"
+      ],
+      "line": 9753,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_4_0.html",
+      "description": "东方财富-经济数据-英国-Halifax 房价指数月率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_uk_halifax_yearly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "英国宏观",
+        "Halifax 房价指数年率"
+      ],
+      "line": 9804,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_4_1.html",
+      "description": "东方财富-经济数据-英国-Halifax 房价指数年率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_uk_trade",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "英国宏观",
+        "贸易帐"
+      ],
+      "line": 9855,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_4_2.html",
+      "description": "东方财富-经济数据-英国-贸易帐",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_uk_bank_rate",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "英国宏观",
+        "央行公布利率决议"
+      ],
+      "line": 9906,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_4_3.html",
+      "description": "东方财富-经济数据-英国-央行公布利率决议",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_uk_core_cpi_yearly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "英国宏观",
+        "核心消费者物价指数年率"
+      ],
+      "line": 9957,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_4_4.html",
+      "description": "东方财富-经济数据-英国-核心消费者物价指数年率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_uk_core_cpi_monthly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "英国宏观",
+        "核心消费者物价指数月率"
+      ],
+      "line": 10008,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_4_7.html",
+      "description": "东方财富-经济数据-英国-核心消费者物价指数月率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_uk_cpi_yearly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "英国宏观",
+        "消费者物价指数年率"
+      ],
+      "line": 10059,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_4_6.html",
+      "description": "东方财富-经济数据-英国-消费者物价指数年率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_uk_cpi_monthly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "英国宏观",
+        "消费者物价指数月率"
+      ],
+      "line": 10110,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_4_7.html",
+      "description": "东方财富-经济数据-英国-消费者物价指数月率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_uk_retail_monthly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "英国宏观",
+        "零售销售月率"
+      ],
+      "line": 10161,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_4_8.html",
+      "description": "东方财富-经济数据-英国-零售销售月率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_uk_retail_yearly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "英国宏观",
+        "零售销售年率"
+      ],
+      "line": 10212,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_4_9.html",
+      "description": "东方财富-经济数据-英国-零售销售年率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_uk_rightmove_yearly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "英国宏观",
+        "Rightmove 房价指数年率"
+      ],
+      "line": 10263,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_4_10.html",
+      "description": "东方财富-经济数据-英国-Rightmove 房价指数年率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_uk_rightmove_monthly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "英国宏观",
+        "Rightmove 房价指数月率"
+      ],
+      "line": 10314,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_4_11.html",
+      "description": "东方财富-经济数据-英国-Rightmove 房价指数月率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_uk_gdp_quarterly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "英国宏观",
+        "GDP 季率初值"
+      ],
+      "line": 10365,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_4_12.html",
+      "description": "东方财富-经济数据-英国-GDP 季率初值",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_uk_gdp_yearly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "英国宏观",
+        "GDP 年率初值"
+      ],
+      "line": 10463,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_4_13.html",
+      "description": "东方财富-经济数据-英国-GDP 年率初值",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_uk_unemployment_rate",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "英国宏观",
+        "失业率"
+      ],
+      "line": 10516,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_4_14.html",
+      "description": "东方财富-经济数据-英国-失业率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_australia_retail_rate_monthly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "澳大利亚宏观",
+        "零售销售月率"
+      ],
+      "line": 10569,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_5_0.html",
+      "description": "东方财富-经济数据-澳大利亚-零售销售月率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_australia_trade",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "澳大利亚宏观",
+        "贸易帐"
+      ],
+      "line": 10621,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_5_1.html",
+      "description": "东方财富-经济数据-澳大利亚-贸易帐",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_australia_unemployment_rate",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "澳大利亚宏观",
+        "失业率"
+      ],
+      "line": 10673,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_5_2.html",
+      "description": "东方财富-经济数据-澳大利亚-失业率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_australia_ppi_quarterly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "澳大利亚宏观",
+        "生产者物价指数季率"
+      ],
+      "line": 10725,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_5_3.html",
+      "description": "东方财富-经济数据-澳大利亚-生产者物价指数季率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_australia_cpi_quarterly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "澳大利亚宏观",
+        "消费者物价指数季率"
+      ],
+      "line": 10777,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_5_4.html",
+      "description": "东方财富-经济数据-澳大利亚-消费者物价指数季率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_australia_cpi_yearly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "澳大利亚宏观",
+        "消费者物价指数年率"
+      ],
+      "line": 10829,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_5_5.html",
+      "description": "东方财富-经济数据-澳大利亚-消费者物价指数年率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_australia_bank_rate",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "澳大利亚宏观",
+        "央行公布利率决议"
+      ],
+      "line": 10881,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_5_6.html",
+      "description": "东方财富-经济数据-澳大利亚-央行公布利率决议",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_canada_new_house_rate",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "加拿大宏观",
+        "新屋开工"
+      ],
+      "line": 10935,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_7_0.html",
+      "description": "东方财富-经济数据-加拿大-新屋开工",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_canada_unemployment_rate",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "加拿大宏观",
+        "失业率"
+      ],
+      "line": 10986,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_7_1.html",
+      "description": "东方财富-经济数据-加拿大-失业率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_canada_trade",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "加拿大宏观",
+        "贸易帐"
+      ],
+      "line": 11037,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_7_2.html",
+      "description": "东方财富-经济数据-加拿大-贸易帐",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_canada_retail_rate_monthly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "加拿大宏观",
+        "零售销售月率"
+      ],
+      "line": 11088,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_7_3.html",
+      "description": "东方财富-经济数据-加拿大-零售销售月率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_canada_bank_rate",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "加拿大宏观",
+        "央行公布利率决议"
+      ],
+      "line": 11139,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_7_4.html",
+      "description": "东方财富-经济数据-加拿大-央行公布利率决议",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_canada_core_cpi_yearly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "加拿大宏观",
+        "核心消费者物价指数年率"
+      ],
+      "line": 11190,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_7_5.html",
+      "description": "东方财富-经济数据-加拿大-核心消费者物价指数年率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_canada_core_cpi_monthly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "加拿大宏观",
+        "核心消费者物价指数月率"
+      ],
+      "line": 11241,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_7_6.html",
+      "description": "东方财富-经济数据-加拿大-核心消费者物价指数月率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_canada_cpi_yearly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "加拿大宏观",
+        "消费者物价指数年率"
+      ],
+      "line": 11292,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_7_7.html",
+      "description": "东方财富-经济数据-加拿大-消费者物价指数年率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_canada_cpi_monthly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "加拿大宏观",
+        "消费者物价指数月率"
+      ],
+      "line": 11343,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_7_8.html",
+      "description": "东方财富-经济数据-加拿大-消费者物价指数月率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_canada_gdp_monthly",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "加拿大宏观",
+        "GDP 月率"
+      ],
+      "line": 11394,
+      "target_url": "http://data.eastmoney.com/cjsj/foreign_7_9.html",
+      "description": "东方财富-经济数据-加拿大-GDP 月率",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_cons_gold",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "重要机构",
+        "全球最大黄金 ETF—SPDR Gold Trust 持仓报告"
+      ],
+      "line": 11447,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_etf_gold",
+      "description": "全球最大黄金 ETF—SPDR Gold Trust 持仓报告, 数据区间从 20041119-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_cons_silver",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "重要机构",
+        "全球最大白银ETF--iShares Silver Trust持仓报告"
+      ],
+      "line": 11500,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_etf_sliver",
+      "description": "全球最大白银 ETF--iShares Silver Trust 持仓报告, 数据区间从 20041202-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_cons_opec_month",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "重要机构",
+        "欧佩克报告"
+      ],
+      "line": 11553,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_opec_report",
+      "description": "欧佩克报告, 数据区间从 20170118-至今",
+      "limit": "单次返回所有历史数据, 以网页数据为准."
+    },
+    {
+      "interface": "macro_euro_lme_holding",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "重要机构",
+        "伦敦金属交易所",
+        "持仓报告"
+      ],
+      "line": 11617,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_lme_traders_report",
+      "description": "伦敦金属交易所(LME)-持仓报告, 数据区间从 20151022-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_euro_lme_stock",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "重要机构",
+        "伦敦金属交易所",
+        "库存报告"
+      ],
+      "line": 11669,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_lme_report",
+      "description": "伦敦金属交易所(LME)-库存报告, 数据区间从 20140702-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_cftc_nc_holding",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "重要机构",
+        "美国商品期货交易委员会",
+        "外汇类非商业持仓报告"
+      ],
+      "line": 11723,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_cftc_nc_report",
+      "description": "美国商品期货交易委员会CFTC外汇类非商业持仓报告, 数据区间从 19830107-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_cftc_c_holding",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "重要机构",
+        "美国商品期货交易委员会",
+        "商品类非商业持仓报告"
+      ],
+      "line": 11775,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_cftc_c_report",
+      "description": "美国商品期货交易委员会CFTC商品类非商业持仓报告, 数据区间从 19830107-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_cftc_merchant_currency_holding",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "重要机构",
+        "美国商品期货交易委员会",
+        "外汇类商业持仓报告"
+      ],
+      "line": 11827,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_cftc_merchant_currency",
+      "description": "美国商品期货交易委员会CFTC外汇类商业持仓报告, 数据区间从 19860115-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_cftc_merchant_goods_holding",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "重要机构",
+        "美国商品期货交易委员会",
+        "商品类商业持仓报告"
+      ],
+      "line": 11879,
+      "target_url": "https://datacenter.jin10.com/reportType/dc_cftc_merchant_goods",
+      "description": "美国商品期货交易委员会 CFTC 商品类商业持仓报告, 数据区间从 19860115-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_usa_cme_merchant_goods_holding",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "重要机构",
+        "芝加哥交易所",
+        "贵金属"
+      ],
+      "line": 11933,
+      "target_url": "https://datacenter.jin10.com/org",
+      "description": "CME-贵金属, 数据区间从 20180405-至今",
+      "limit": "单次返回所有历史数据"
+    },
+    {
+      "interface": "macro_info_ws",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "全球宏观",
+        "宏观日历"
+      ],
+      "line": 11986,
+      "target_url": "https://wallstreetcn.com/calendar",
+      "description": "华尔街见闻-日历-宏观",
+      "limit": "单次返回指定 date 的数据"
+    },
+    {
+      "interface": "news_economic_baidu",
+      "section": [
+        "[AKShare](https://github.com/akfamily/akshare) 宏观数据",
+        "全球宏观",
+        "全球宏观事件"
+      ],
+      "line": 12059,
+      "target_url": "https://gushitong.baidu.com/calendar",
+      "description": "全球宏观指标重大事件",
+      "limit": "单次返回指定 date 的所有历史数据"
+    }
+  ]
+}
