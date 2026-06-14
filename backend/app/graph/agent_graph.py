@@ -5,12 +5,12 @@ from __future__ import annotations
 from collections.abc import Callable
 from typing import Annotated, Any, TypedDict
 
-from langchain.agents import create_agent
 from langchain_core.messages import AnyMessage
 from langchain_openai import ChatOpenAI
 from langgraph.checkpoint.memory import InMemorySaver
 from langgraph.graph import END, START, StateGraph
 from langgraph.graph.message import add_messages
+from langgraph.prebuilt import create_react_agent
 
 from backend.app.core.config import Settings
 from backend.app.docs_index.router import ToolRouter
@@ -46,7 +46,7 @@ def build_agent_graph(
     model: Any | None = None,
     registry: ToolRegistry | None = None,
     router: ToolRouter | None = None,
-    agent_factory: Callable[..., Any] = create_agent,
+    agent_factory: Callable[..., Any] | None = None,
 ) -> Any:
     """Create and compile the stock-query LangGraph."""
 
@@ -72,11 +72,8 @@ def build_agent_graph(
 
     def run_agent(state: AgentState) -> dict[str, list[AnyMessage]]:
         tools = tool_registry.langchain_tools(state["selected_tools"])
-        react_agent = agent_factory(
-            model=chat_model,
-            tools=tools,
-            system_prompt=SYSTEM_PROMPT,
-        )
+        factory = agent_factory or create_react_agent
+        react_agent = factory(model=chat_model, tools=tools)
         result = react_agent.invoke({"messages": state["messages"]})
         return {"messages": result["messages"]}
 

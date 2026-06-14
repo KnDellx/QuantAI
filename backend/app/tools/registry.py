@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-from collections.abc import Callable
 from typing import Any
 
 from langchain_core.tools import BaseTool, StructuredTool
@@ -23,35 +22,6 @@ PARAMETER_TYPES: dict[str, type[Any]] = {
 }
 
 
-class _ModuleClientAdapter:
-    """Adapt a module-like object to the small TushareClient surface."""
-
-    def __init__(self, module: Any) -> None:
-        self.module = module
-
-    def stock_basic(self, **params: Any) -> Any:
-        return self._call("stock_basic", **params)
-
-    def daily(self, **params: Any) -> Any:
-        return self._call("daily", **params)
-
-    def weekly(self, **params: Any) -> Any:
-        return self._call("weekly", **params)
-
-    def monthly(self, **params: Any) -> Any:
-        return self._call("monthly", **params)
-
-    def latest_basic(self, **params: Any) -> Any:
-        return self._call("latest_basic", **params)
-
-    def call(self, endpoint: str, **params: Any) -> Any:
-        return self._call(endpoint, **params)
-
-    def _call(self, endpoint: str, **params: Any) -> Any:
-        function = getattr(self.module, endpoint)
-        return function(**params)
-
-
 class ToolRegistry:
     """Own wrapper instances and construct LangChain tools on demand."""
 
@@ -60,28 +30,18 @@ class ToolRegistry:
         documents: list[ToolDocument] | None = None,
         resolver: StockResolver | None = None,
         tushare_client: TushareClient | None = None,
-        akshare_module: Any | None = None,
     ) -> None:
-        client = tushare_client or self._adapt_module(akshare_module)
         self.documents = documents or load_tool_docs().tools
-        self.resolver = resolver or StockResolver(client)
+        self.resolver = resolver or StockResolver(tushare_client)
         self._documents = {document.tool_name: document for document in self.documents}
         self._wrappers = {
             document.tool_name: TushareWrapper(
                 document,
                 self.resolver,
-                tushare_client=client,
+                tushare_client=tushare_client,
             )
             for document in self.documents
         }
-
-    @staticmethod
-    def _adapt_module(module: Any | None) -> TushareClient | Any | None:
-        if module is None:
-            return None
-        if isinstance(module, TushareClient):
-            return module
-        return _ModuleClientAdapter(module)
 
     def get_document(self, name: str) -> ToolDocument:
         """Return one registered contract."""

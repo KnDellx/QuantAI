@@ -40,4 +40,4 @@ testpaths = ["backend/tests"]
 markers = [
     "integration: live upstream tests that call real Tushare / LLM APIs",
 ]
-addopts = "-m integration"
+addopts = "-m 'not integration'"

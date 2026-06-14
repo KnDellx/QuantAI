@@ -14,6 +14,14 @@ class StockRef(BaseModel):
     name: str
 
 
+class ToolError(BaseModel):
+    """Machine-readable wrapper error."""
+
+    code: str
+    message: str
+    retryable: bool = False
+
+
 class ToolResult(BaseModel):
     """Stable result envelope returned by every stock data tool."""
 
@@ -25,14 +33,6 @@ class ToolResult(BaseModel):
     stock: StockRef | None = None
     data: Any = None
     error: str | ToolError | None = None
-
-
-class ToolError(BaseModel):
-    """Machine-readable wrapper error."""
-
-    code: str
-    message: str
-    retryable: bool = False
 
 
 class StockQueryInput(BaseModel):
