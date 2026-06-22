@@ -39,7 +39,16 @@ class TushareWrapper:
     ) -> None:
         self.document = document
         self.resolver = resolver
-        self.tushare = tushare_client or TushareClient()
+        self._tushare_client = tushare_client
+        self._tushare: TushareClient | None = None
+
+    @property
+    def tushare(self) -> TushareClient:
+        """Return the Tushare client, creating it lazily on first access."""
+
+        if self._tushare is None:
+            self._tushare = self._tushare_client or TushareClient()
+        return self._tushare
 
     def invoke(self, **params: Any) -> str:
         """Validate, execute, and normalize one wrapper call."""
@@ -91,12 +100,8 @@ class TushareWrapper:
 
     def _realtime_quote(self, params: dict[str, Any]) -> Any:
         stock = self.resolver.resolve(str(params["stock"]))
-        try:
-            frame = self._call_endpoint("realtime_quote", {"stock": stock.code})
-        except (AttributeError, TypeError):
-            frame = pd.DataFrame()
-        if frame.empty:
-            frame = self.tushare.latest_basic(ts_code=to_ts_code(stock.code))
+        ts_code = to_ts_code(stock.code)
+        frame = self.tushare.realtime_quote(ts_code=ts_code)
         return normalize_data(frame, 10)
 
     def _history(self, params: dict[str, Any]) -> Any:

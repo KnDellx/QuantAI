@@ -16,6 +16,7 @@ class StockResolver:
 
     def __init__(self, tushare_client: TushareClient | None = None) -> None:
         self.tushare_client = tushare_client or TushareClient()
+        self._stock_list_cache: list[dict[str, str]] | None = None
 
     def resolve(self, query: str) -> StockRef:
         """Resolve an exact code/name or an unambiguous partial name."""
@@ -55,7 +56,9 @@ class StockResolver:
         raise ValueError(f"股票名称不明确，请使用代码或完整名称。候选：{choices}")
 
     def _stock_list(self) -> list[dict[str, str]]:
-        return _load_stock_list(self.tushare_client)
+        if self._stock_list_cache is None:
+            self._stock_list_cache = _load_stock_list(self.tushare_client)
+        return self._stock_list_cache
 
 
 @lru_cache(maxsize=8)

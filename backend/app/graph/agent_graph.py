@@ -15,6 +15,7 @@ from langgraph.prebuilt import create_react_agent
 from backend.app.core.config import Settings
 from backend.app.docs_index.router import ToolRouter
 from backend.app.tools.registry import ToolRegistry
+from backend.app.tools.tushare_client import TushareClient
 
 SYSTEM_PROMPT = """
 你是一名谨慎的 A 股信息查询助手。
@@ -56,7 +57,8 @@ def build_agent_graph(
         base_url=settings.openai_base_url,
         temperature=0,
     )
-    tool_registry = registry or ToolRegistry()
+    tushare_client = TushareClient(token=settings.tushare_token)
+    tool_registry = registry or ToolRegistry(tushare_client=tushare_client)
     tool_router = router or ToolRouter(
         tool_registry.documents, top_k=settings.tool_top_k
     )
@@ -73,7 +75,11 @@ def build_agent_graph(
     def run_agent(state: AgentState) -> dict[str, list[AnyMessage]]:
         tools = tool_registry.langchain_tools(state["selected_tools"])
         factory = agent_factory or create_react_agent
-        react_agent = factory(model=chat_model, tools=tools)
+        react_agent = factory(
+            model=chat_model,
+            tools=tools,
+            prompt=SYSTEM_PROMPT,
+        )
         result = react_agent.invoke({"messages": state["messages"]})
         return {"messages": result["messages"]}
 

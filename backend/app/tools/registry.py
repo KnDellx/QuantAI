@@ -33,15 +33,23 @@ class ToolRegistry:
     ) -> None:
         self.documents = documents or load_tool_docs().tools
         self.resolver = resolver or StockResolver(tushare_client)
+        self._tushare_client = tushare_client
         self._documents = {document.tool_name: document for document in self.documents}
-        self._wrappers = {
-            document.tool_name: TushareWrapper(
-                document,
+        self._wrappers: dict[str, TushareWrapper] = {}
+        self._langchain_cache: dict[str, BaseTool] = {}
+
+    def _get_wrapper(self, name: str) -> TushareWrapper:
+        """Return a wrapper, creating it lazily on first access."""
+
+        if name not in self._wrappers:
+            if name not in self._documents:
+                raise KeyError(f"Unknown tool: {name}")
+            self._wrappers[name] = TushareWrapper(
+                self._documents[name],
                 self.resolver,
-                tushare_client=tushare_client,
+                tushare_client=self._tushare_client,
             )
-            for document in self.documents
-        }
+        return self._wrappers[name]
 
     def get_document(self, name: str) -> ToolDocument:
         """Return one registered contract."""
@@ -51,12 +59,42 @@ class ToolRegistry:
     def invoke(self, name: str, **params: Any) -> str:
         """Invoke a wrapper by its whitelisted name."""
 
-        return self._wrappers[name].invoke(**params)
+        return self._get_wrapper(name).invoke(**params)
 
     def langchain_tools(self, names: list[str]) -> list[BaseTool]:
-        """Build only the selected LangChain tools."""
+        """Build only the selected LangChain tools (cached per name)."""
 
-        return [self._to_langchain_tool(self._documents[name]) for name in names]
+        result: list[BaseTool] = []
+        for name in names:
+            if name not in self._langchain_cache:
+                if name not in self._documents:
+                    raise KeyError(f"Unknown tool: {name}")
+                self._langchain_cache[name] = self._to_langchain_tool(
+                    self._documents[name]
+                )
+            result.append(self._langchain_cache[name])
+        return result
+
+    def register(
+        self,
+        document: ToolDocument,
+        wrapper: TushareWrapper | None = None,
+    ) -> None:
+        """Register a new tool at runtime."""
+
+        self._documents[document.tool_name] = document
+        self.documents = list(self._documents.values())
+        if wrapper is not None:
+            self._wrappers[document.tool_name] = wrapper
+        self._langchain_cache.pop(document.tool_name, None)
+
+    def unregister(self, name: str) -> None:
+        """Remove a tool at runtime."""
+
+        self._documents.pop(name, None)
+        self.documents = list(self._documents.values())
+        self._wrappers.pop(name, None)
+        self._langchain_cache.pop(name, None)
 
     def _to_langchain_tool(self, document: ToolDocument) -> BaseTool:
         fields: dict[str, Any] = {}

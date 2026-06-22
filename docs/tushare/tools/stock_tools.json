@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "tools": [
+    {
+      "tool_name": "resolve_stock",
+      "category": "identity",
+      "description": "解析 A 股股票名称或六位代码，返回标准化的股票代码和名称。用户可以输入中文名称、简称或六位数字代码。",
+      "params": {
+        "stock": {
+          "type": "string",
+          "required": true,
+          "description": "A股名称（如「贵州茅台」）或六位股票代码（如「600519」）",
+          "default": null,
+          "examples": ["贵州茅台", "600519", "平安银行"]
+        }
+      },
+      "returns": {
+        "type": "object",
+        "description": "包含 code（六位代码）和 name（股票名称）的对象"
+      },
+      "example_query": [
+        "贵州茅台的代码是什么",
+        "600519 是什么股票",
+        "宁德时代的代码"
+      ],
+      "source_interfaces": ["stock_basic"],
+      "aliases": ["股票代码", "解析股票", "股票名称"],
+      "enabled": true,
+      "mode": "resolve_stock"
+    },
+    {
+      "tool_name": "get_stock_realtime_quote",
+      "category": "stock_realtime",
+      "description": "查询单只 A 股股票的最新行情快照，包括最新价、开盘价、最高价、最低价、成交量等。如果无法获取实时行情，则返回最近一个交易日的日线基本数据。",
+      "params": {
+        "stock": {
+          "type": "string",
+          "required": true,
+          "description": "A股名称或六位股票代码",
+          "default": null,
+          "examples": ["贵州茅台", "600519"]
+        }
+      },
+      "returns": {
+        "type": "object",
+        "description": "包含最新价格、成交量、成交额等行情字段的对象"
+      },
+      "example_query": [
+        "贵州茅台现在多少钱",
+        "600519 最新价格",
+        "平安银行实时行情"
+      ],
+      "source_interfaces": ["realtime_quote"],
+      "aliases": ["实时行情", "最新价", "当前价格", "行情"],
+      "enabled": true,
+      "mode": "realtime_quote"
+    },
+    {
+      "tool_name": "get_stock_daily_history",
+      "category": "stock_history",
+      "description": "查询股票日线历史行情，包括开盘价、收盘价、最高价、最低价、成交量等。支持前复权(qfq)和后复权(hfq)。",
+      "params": {
+        "stock": {
+          "type": "string",
+          "required": true,
+          "description": "A股名称或六位股票代码",
+          "default": null,
+          "examples": ["贵州茅台", "600519"]
+        },
+        "days": {
+          "type": "integer",
+          "required": false,
+          "description": "查询最近多少天的日线数据，默认30天，范围1-365",
+          "default": 30,
+          "examples": [30, 60]
+        },
+        "adjust": {
+          "type": "string",
+          "required": false,
+          "description": "复权方式：空字符串为不复权，qfq 为前复权，hfq 为后复权",
+          "default": "",
+          "examples": ["", "qfq", "hfq"]
+        }
+      },
+      "returns": {
+        "type": "object",
+        "description": "日线 OHLCV 行情数据列表"
+      },
+      "example_query": [
+        "贵州茅台过去一个月走势",
+        "600519 最近30天行情",
+        "宁德时代日线数据"
+      ],
+      "source_interfaces": ["daily"],
+      "aliases": ["历史行情", "日线", "日K", "K线"],
+      "enabled": true,
+      "mode": "history"
+    },
+    {
+      "tool_name": "get_stock_weekly_history",
+      "category": "stock_history",
+      "description": "查询股票周线历史行情，适合分析中期趋势。",
+      "params": {
+        "stock": {
+          "type": "string",
+          "required": true,
+          "description": "A股名称或六位股票代码",
+          "default": null,
+          "examples": ["贵州茅台", "600519"]
+        },
+        "days": {
+          "type": "integer",
+          "required": false,
+          "description": "查询最近多少天的周线数据，默认365天",
+          "default": 365,
+          "examples": [365, 730]
+        },
+        "adjust": {
+          "type": "string",
+          "required": false,
+          "description": "复权方式：空字符串为不复权，qfq 为前复权，hfq 为后复权",
+          "default": "",
+          "examples": ["", "qfq", "hfq"]
+        },
+        "period": {
+          "type": "string",
+          "required": false,
+          "description": "周期类型，固定为 weekly",
+          "default": "weekly",
+          "examples": ["weekly"]
+        }
+      },
+      "returns": {
+        "type": "object",
+        "description": "周线 OHLCV 行情数据列表"
+      },
+      "example_query": [
+        "贵州茅台周线",
+        "600519 周K数据",
+        "宁德时代最近一年周线"
+      ],
+      "source_interfaces": ["weekly"],
+      "aliases": ["周线", "周K"],
+      "enabled": true,
+      "mode": "history"
+    },
+    {
+      "tool_name": "get_stock_monthly_history",
+      "category": "stock_history",
+      "description": "查询股票月线历史行情，适合分析长期趋势。",
+      "params": {
+        "stock": {
+          "type": "string",
+          "required": true,
+          "description": "A股名称或六位股票代码",
+          "default": null,
+          "examples": ["贵州茅台", "600519"]
+        },
+        "days": {
+          "type": "integer",
+          "required": false,
+          "description": "查询最近多少天的月线数据，默认730天",
+          "default": 730,
+          "examples": [730]
+        },
+        "adjust": {
+          "type": "string",
+          "required": false,
+          "description": "复权方式：空字符串为不复权，qfq 为前复权，hfq 为后复权",
+          "default": "",
+          "examples": ["", "qfq", "hfq"]
+        },
+        "period": {
+          "type": "string",
+          "required": false,
+          "description": "周期类型，固定为 monthly",
+          "default": "monthly",
+          "examples": ["monthly"]
+        }
+      },
+      "returns": {
+        "type": "object",
+        "description": "月线 OHLCV 行情数据列表"
+      },
+      "example_query": [
+        "贵州茅台月线",
+        "600519 月K数据",
+        "宁德时代长期走势"
+      ],
+      "source_interfaces": ["monthly"],
+      "aliases": ["月线", "月K"],
+      "enabled": true,
+      "mode": "history"
+    },
+    {
+      "tool_name": "get_stock_company_profile",
+      "category": "company",
+      "description": "查询上市公司基本资料，包括公司名称、所属行业、上市日期、交易所、所在地区等信息。",
+      "params": {
+        "stock": {
+          "type": "string",
+          "required": true,
+          "description": "A股名称或六位股票代码",
+          "default": null,
+          "examples": ["贵州茅台", "600519"]
+        }
+      },
+      "returns": {
+        "type": "object",
+        "description": "包含公司名称、行业、上市日期等基本信息"
+      },
+      "example_query": [
+        "介绍一下宁德时代",
+        "贵州茅台的公司信息",
+        "600519 是什么公司"
+      ],
+      "source_interfaces": ["stock_basic"],
+      "aliases": ["公司资料", "公司信息", "基本信息", "公司简介"],
+      "enabled": true,
+      "mode": "company"
+    },
+    {
+      "tool_name": "get_stock_news",
+      "category": "stock_news",
+      "description": "查询与指定股票相关的近期新闻资讯。按股票名称和代码筛选匹配的新闻条目。",
+      "params": {
+        "stock": {
+          "type": "string",
+          "required": true,
+          "description": "A股名称或六位股票代码",
+          "default": null,
+          "examples": ["贵州茅台", "600519"]
+        },
+        "limit": {
+          "type": "integer",
+          "required": false,
+          "description": "返回新闻条数，默认5条，最多20条",
+          "default": 5,
+          "examples": [5, 10]
+        }
+      },
+      "returns": {
+        "type": "object",
+        "description": "包含新闻标题和内容的列表"
+      },
+      "example_query": [
+        "平安银行最近有什么新闻",
+        "贵州茅台最新消息",
+        "宁德时代资讯"
+      ],
+      "source_interfaces": ["news"],
+      "aliases": ["新闻", "资讯", "消息", "公告"],
+      "enabled": true,
+      "mode": "news"
+    },
+    {
+      "tool_name": "get_stock_financial_indicator",
+      "category": "financial",
+      "description": "查询股票财务指标，包括每股收益(EPS)、净资产收益率(ROE)、净利润、营业收入等关键财务数据。",
+      "params": {
+        "stock": {
+          "type": "string",
+          "required": true,
+          "description": "A股名称或六位股票代码",
+          "default": null,
+          "examples": ["贵州茅台", "600519"]
+        },
+        "start_year": {
+          "type": "integer",
+          "required": false,
+          "description": "起始年份，默认为当前年份减2",
+          "default": null,
+          "examples": [2022, 2023]
+        }
+      },
+      "returns": {
+        "type": "object",
+        "description": "财务指标数据列表，包含 EPS、ROE 等"
+      },
+      "example_query": [
+        "贵州茅台财务数据",
+        "600519 财务指标",
+        "宁德时代的ROE是多少"
+      ],
+      "source_interfaces": ["fina_indicator"],
+      "aliases": ["财务指标", "财务数据", "财务报表", "盈利能力"],
+      "enabled": true,
+      "mode": "financial"
+    }
+  ]
+}

@@ -25,6 +25,7 @@ class TestSettings:
     def test_settings_defaults(self, monkeypatch: pytest.MonkeyPatch) -> None:
         monkeypatch.setenv("OPENAI_API_KEY", "test-key")
         monkeypatch.delenv("OPENAI_BASE_URL", raising=False)
+        monkeypatch.delenv("TUSHARE_TOKEN", raising=False)
 
         # Use a non-existent env_file to avoid .env overriding defaults
         from pydantic_settings import SettingsConfigDict

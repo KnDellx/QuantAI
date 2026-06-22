@@ -117,3 +117,22 @@ class TushareClient:
         """Return the latest daily-basic records available to the token."""
 
         return self.call("daily_basic", ts_code=ts_code, **params)
+
+    def realtime_quote(
+        self, ts_code: str, freq: str = "1MIN", limit: int = 1, **params: Any
+    ) -> pd.DataFrame:
+        """Return the latest realtime minute-bar via Tushare rt_min.
+
+        Falls back to ``latest_basic`` (daily close) when rt_min is
+        unavailable for the current token or the market is closed.
+        """
+
+        try:
+            frame = self.call(
+                "rt_min", ts_code=ts_code, freq=freq, limit=limit, **params
+            )
+            if not frame.empty:
+                return frame.tail(limit)
+        except Exception:
+            pass
+        return self.latest_basic(ts_code=ts_code)
